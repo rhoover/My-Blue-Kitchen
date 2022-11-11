@@ -1,0 +1,13 @@
+.categories {
+  &-title {
+    font-size: ms(3);
+    padding: 1rem 0px;
+    margin-bottom: 2rem;
+    border-top: 1px solid setcolor(blue, base);
+    border-bottom: 1px solid setcolor(blue, base);
+  }
+}
+
+.category-items {
+  @extend .posts;
+}

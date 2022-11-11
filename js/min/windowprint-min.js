@@ -1,0 +1,1 @@
+!function(){"use strict";var printButton=document.querySelector(".print-button");printButton&&(printButton.onclick=function(){window.print()})}();

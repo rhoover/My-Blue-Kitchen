@@ -1,0 +1,76 @@
+.footer {
+  align-self: end;
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(auto, 65rem) minmax(1rem, 1fr);
+  grid-template-rows: max-content;
+  align-items: center;
+  background-color: setcolor(sea-blue, light95);
+  border-top: 1px solid setcolor(sea-blue, base);
+  z-index: 300;
+  &-fourohfour {
+    display: none;
+  }
+  & > * {
+    grid-column: 2 / 3;
+    padding: 1rem 0px;
+  }
+  &-header {
+    font-size: ms(3);
+    &-joke {
+      font-size: ms(-1);
+      color: setcolor(black, light55);
+    }
+    @media (min-width: 90em) {
+      grid-row: 1 / 2;
+      justify-self: start;
+    }
+  }
+  &-text {
+    font-size: ms(-1);
+    @media (min-width: 90em) {
+      grid-row: 2 / 3;
+      justify-self: start;
+    }
+  }
+  &-bookface {
+    color: inherit;
+    text-decoration: none;
+    align-self: center;
+    @media (min-width: 90em) {
+      grid-row: 1 / 2;
+      justify-self: end;
+    }
+    &-svg {
+      width: 32px;
+      height: 32px;
+      fill: #3B5998;
+    }
+  }
+  &-pinterest {
+    color: inherit;
+    text-decoration: none;
+    align-self: center;
+    @media (min-width: 90em) {
+      grid-row: 2 / 3;
+      justify-self: end;
+    }
+    &-svg {
+      width: 32px;
+      height: 32px;
+      fill: #BD081C;
+    }
+  }
+  &-etsy {
+    color: inherit;
+    text-decoration: none;
+    align-self: center;
+    @media (min-width: 90em) {
+      grid-row: 3 / 4;
+      justify-self: end;
+    }
+    &-svg {
+      width: 52px;
+      height: 36px;
+    }
+  }
+}

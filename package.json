@@ -1,0 +1,35 @@
+{
+  "name": "mybluekitchen",
+  "version": "1.0.0",
+  "description": "Where Confidence Sass Come To A Boil",
+  "main": "index.js",
+  "scripts": {
+    "critical-prep": "rm css/critical/*.css",
+    "critical-compile": "sass --style compressed --no-source-map sass/style-critical.scss css/critical/style-critical.css",
+    "critical": "npm-run-all critical-prep critical-compile",
+    "print-prep": "rm css/print/*.css",
+    "print-compile": "sass --style compressed --no-source-map sass/style-print.scss css/print/style-print.css",
+    "print": " npm-run-all print-prep print-compile",
+    "sass-prep": "rm *.css",
+    "sass-compile": "sass --style compressed --no-source-map sass/style.scss style.css",
+    "sass-version": "node-file-rev style.css",
+    "add-style-file": ".bin/add-style-file.sh",
+    "sass": "npm-run-all sass-prep sass-compile sass-version add-style-file",
+    "scrollmin": "terser js/scroll-top.js -c -o js/min/scroll-min.js",
+    "buttonmin": "terser js/menubutton.js -c -o js/min/menubutton-min.js",
+    "printmin": "terser js/windowprint.js -c -o js/min/windowprint-min.js",
+    "backmin": "terser js/backbutton.js -c -o js/min/backbutton-min.js",
+    "googlemin": "terser js/google-analytics.js -c -o js/min/google-analytics-min.js",
+    "searchmin": "terser js/search-reveal.js -c -o js/min/search-reveal-min.js",
+    "navcheckmin": "terser js/navcheck.js -c -o js/min/navcheck-min.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "modularscale-sass": "^3.0.10",
+    "node-file-rev": "^1.1.4",
+    "npm-run-all": "^4.1.5",
+    "terser": "^5.15.0"
+  }
+}

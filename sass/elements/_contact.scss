@@ -1,0 +1,53 @@
+.contact-intro {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-top: 2px solid setcolor(blue, light45);
+  border-bottom: 2px solid setcolor(blue, light45);
+  & p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.wpcf7 {
+  &-form {
+    & p {
+      margin-bottom: 2rem;
+    }
+  }
+  &-email {
+    width: 90%;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    line-height: 2rem;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid setcolor(blue, base);
+    border-left: 1px solid setcolor(blue, base);
+  }
+  &-text {
+    width: 90%;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    line-height: 2rem;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid setcolor(blue, base);
+    border-left: 1px solid setcolor(blue, base);
+  }
+  &-textarea {
+    width: 90%;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border: 1px solid setcolor(blue, base);
+  }
+  &-submit {
+    position: relative;
+    width: 90%;
+    line-height: ms(5);
+    margin-bottom: 3rem;
+    background-color: setcolor(white, base);
+    border-radius: 0.25rem;
+    border: 1px solid setcolor(sea-blue, base);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,1 @@
+!function(){"use strict";document.querySelector(".header-backbutton").onclick=function(){history.back()}}();

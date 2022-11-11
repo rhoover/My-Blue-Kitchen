@@ -1,0 +1,63 @@
+.nav {
+  &-main {
+    position: fixed;
+    top: 4rem;
+    width: 45%;
+    height: calc(100vh - 4rem);
+    transform: translateX(-100%);
+    text-align: center;
+    background: setcolor(white, light65);
+    background-image: linear-gradient(setcolor(white, light65), setcolor(white, base));
+    z-index: 450;
+    @extend %animate-helper;
+    &-open {
+      transform: translateX(0%);
+      box-shadow: 10px 3px 4px 0px rgba(0,0,0,0.1);
+      border-right: 1px solid setcolor(sea-blue, base);
+    }
+    @include breakpoint($medium) {
+      width: 20%;
+    }
+    @include breakpoint($large) {
+      top: 1.25rem;
+      right: 0;
+      width: auto;
+      height: auto;
+      padding-right: 3rem;
+      transform: translateX(0);
+      background: transparent;
+      z-index: 500;
+    }
+    & > a {
+      display: block;
+      padding: 1rem 0px;
+      color: setcolor(black, light25);
+      text-decoration: none;
+      border-bottom: 1px solid setcolor(sea-blue, base);
+      &:hover {
+        font-weight: 700;
+      }
+      &:first-of-type {
+        border-top: 1px solid setcolor(sea-blue, base);
+      }
+      @include breakpoint($large) {
+        display: inline-block;
+        padding: 0.25rem 1rem;
+        border-bottom: none;
+        border-right: 1px solid setcolor(blue, base);
+        color: setcolor(blue, dark25);
+      }
+      &:first-of-type {
+        border-top: 1px solid setcolor(white, base);
+        @include breakpoint($large) {
+          border-top: none;
+        }
+      }
+      &:last-of-type {
+        @include breakpoint($large) {
+          border-right: none;
+        }
+      }
+    }
+  }
+}

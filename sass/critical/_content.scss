@@ -1,0 +1,24 @@
+.content {
+  position: relative;
+  margin-top: 11rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(auto, 70rem) minmax(1rem, 1fr);
+  grid-template-rows: max-content;
+  z-index: 300;
+  background-color: setcolor(white, base);
+  & > * {
+    grid-column: 2 / 3;
+  }
+  & > p {
+    margin-bottom: 1.5rem;
+  }
+  @media (min-width: 40em) {
+    margin-top: 24rem;
+  }
+  @media (min-width: 87.5em) {
+    margin-top: 34rem;
+  }
+}

@@ -1,0 +1,72 @@
+
+.header-backbutton {
+  display: none;
+  visibility: none;
+}
+.header-menu {
+  display: none;
+  visibility: none;
+}
+
+.nav-main {
+  display: none;
+  visibility: none;
+  &>* {
+    display: none;
+    visibility: none;
+  }
+}
+.branding {
+  display: none;
+  visibility: none;
+  &>* {
+    display: none;
+    visibility: none;
+  }
+}
+#footer {display: none;}
+
+.post-article p img {
+  display: none;
+  visibility: none;
+}
+.wp-post-image {
+  display: none;
+  visibility: none;
+}
+
+#respond {display: none;}
+
+.print-button {
+  display: none;
+  visibility: none;
+}
+
+.cat-list-post {
+  display: none;
+  visibility: none;
+}
+
+.header-magnify {
+  display: none;
+  visibility: none;
+}
+
+.header-search {
+  display: none;
+  visibility: none;
+}
+
+.comments-area {
+  display: none;
+  visibility: none;
+}
+
+.cat-list-header {
+  display: none;
+  visibility: hidden;
+}
+.cat-list-oils {
+  display: none;
+  visibility: hidden;
+}

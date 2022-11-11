@@ -1,0 +1,40 @@
+.fourohfour {
+  position: relative;
+  display: block;
+  margin-top: 0px;
+  padding-top: 0px;
+  max-height: 100vh;
+  overflow: hidden;
+  & > * {
+    grid-column: 1 / 4;
+  }
+  &-image {
+    margin-top: 4rem;
+    width: 100%;
+    object-fit: contain;
+  }
+  &-title {
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+    font-size: ms(4);
+    background: rgba(setcolor(white, dark35), 0.75);
+    @media (min-width: 90em) {
+      position: absolute;
+      top: 12rem;
+      width: 100%;
+    }
+  }
+  &-text {
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+    font-size: ms(4);
+    background: rgba(setcolor(white, dark35), 0.75);
+    @media (min-width: 90em) {
+      position: absolute;
+      top: 36rem;
+      width: 100%;
+    }
+  }
+}

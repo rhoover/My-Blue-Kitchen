@@ -1,0 +1,16 @@
+.header {
+  position: relative;
+  top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  box-shadow: none;
+  &-center {
+    display: block;
+    transform: translateX(-100px);
+  }
+  &-title {
+    font-family: 'Quicksand';
+    font-size: ms(3);
+    color: setcolor(sea-blue, dark45);
+  }
+}

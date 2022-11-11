@@ -1,0 +1,26 @@
+.articles {
+  @extend .posts;
+}
+
+.article-card {
+  @extend .posts-card;
+  &-meta {
+    @extend .posts-card-meta;
+  }
+  &-title {
+    @extend .posts-card-title;
+  }
+  &-category {
+    @extend .posts-card-category;
+  }
+  &-date {
+    @extend .posts-card-date
+  }
+  &:last-of-type {
+    margin-bottom: 2rem;
+  }
+}
+
+.search-nothing-help {
+  margin: 2rem 0px 4rem 0px;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "My Blue Kitchen",
+  "short_name": "MBK",
+  "description": "Where Reluctance, Confidence and Sass Come To A Boil",
+  "lang": "en-US",
+  "start_url": "https://mybluekitchen.cooking",
+  "orientation": "portrait",
+  "theme_color": "#149595",
+  "background_color": "#fdfdfd",
+  "display": "browser",
+  "icons": [
+      {
+          "src": "/wp-content/themes/mbk/mbk-icns/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },
+      {
+          "src": "/wp-content/themes/mbk/mbk-icns/android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      }
+  ]
+}
