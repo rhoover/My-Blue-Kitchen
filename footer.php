@@ -58,7 +58,6 @@
 	?>
 </script>
 
-<!-- print button behavior -->
 <?php
 	if (is_single()) {
 		echo "<!-- print button behavior -->";
