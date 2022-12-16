@@ -4,7 +4,7 @@
   right: 1rem;
   bottom: 1rem;
   width: 60px;
-  height: 28px;
+  height: 60px;
   background-color: rgba(setcolor(sea-blue, base),0.95);
   border-radius: 100%;
   border: 1px solid setcolor(sea-blue, dark25);
@@ -24,7 +24,7 @@
     width: 25px;
     height: 25px;
     top: 14px;
-    left: 15px;
+    left: 17px;
     transform: rotate(45deg);
     background: transparent;
     border-top: .3em solid setcolor(white, base);
@@ -36,7 +36,7 @@
   & p {
     position: absolute;
     top: 30px;
-    left: 17px;
+    left: 15px;
     color: setcolor(white, base);
   }
 }
