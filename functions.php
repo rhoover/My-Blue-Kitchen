@@ -212,6 +212,11 @@ function remove_gutenberg_styles() {
 	wp_dequeue_script( 'wp-block-library' );
 }
 add_action( 'wp_enqueue_scripts', 'remove_gutenberg_styles', 100 );
+function disable_classic_theme_styles() {
+	wp_deregister_style('classic-theme-styles');
+	wp_dequeue_style('classic-theme-styles');
+}
+add_filter('wp_enqueue_scripts', 'disable_classic_theme_styles', 100);
 
 /** change gallery image size, courtesy https://amethystwebsitedesign.com/how-to-get-larger-images-in-a-wordpress-gallery **/
 function mbk_gallery_atts( $out, $pairs, $atts ) {
