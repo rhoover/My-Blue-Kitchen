@@ -13,6 +13,15 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-80T3NNQBVK"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-80T3NNQBVK');
+	</script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="description" content="My Blue Kitchen, Where Confidence Reluctance and Sass Come To A Boil">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
