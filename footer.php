@@ -17,7 +17,7 @@
 	<h3 class="footer-header">My Blue Kitchen is fueled with passion <span class="footer-header-joke">and occasionally Single Barrel Bourbon</span></h3>
 	<p class="footer-text">And powered by <a class="footer-text-anchor" href="https://moosedog.io" target="_blank" rel="noopener">MooseDog Studios</a>, known across Vermont as Robin Hoover
 	</p>
-	<a class="footer-bookface" href="https://www.facebook.com/jillevize/" target="_blank" rel="noreferrer noopener">
+	<a class="footer-bookface" href="https://www.facebook.com/mybluekitchen" target="_blank" rel="noreferrer noopener">
 		<svg class="footer-bookface-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-facebook-icon">Facebook icon</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg>
 		Find me on Facebook
 	</a>
