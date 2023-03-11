@@ -9,8 +9,10 @@
 
 // This has all the data of the post/page etc
 $payload["@context"] = "http://schema.org/";
+
 // Stuff for any page, if it exists
 $post_data = get_post_data();
+
 // Stuff for specific pages
 $category = get_the_category();
 $categories = get_the_category($post_data->ID);
@@ -19,6 +21,7 @@ $categories = get_the_category($post_data->ID);
 if (is_front_page()) {
   $payload["@type"] = "Organization";
   $payload["name"] = "My Blue Kitchen";
+  $payload["Publisher"] = "My Blue Kitchen";
   $payload["logo"] = "https://mybluekitchen.cooking/wp-content/uploads/2023/03/android-chrome-512x512-1.png";
   $payload["url"] = "http://mybluekitchen.cooking/";
   $payload["image"] = esc_html( get_template_directory_uri() . '/images/flames-large.jpg' );
@@ -38,7 +41,8 @@ if (is_front_page()) {
     "https://www.instagram.com/mybluekitchenvt/"
   ];
   $payload["contactPoint"] = [
-    ["@type" => "ContactPoint",
+    [
+      "@type" => "ContactPoint",
       "telephone" => "802-696-9265",
       "email" => "jill@mybluekitchen.cooking",
       "contactType" => "leadership"
@@ -57,6 +61,7 @@ if (is_single()) {
   $payload["url"] = $post_url;
   $payload["Publisher"] = "My Blue Kitchen";
   $payload["author"] = array( "@type" => "Person", "name" => $author_data->display_name, );
+  $payload["logo"] = "https://mybluekitchen.cooking/wp-content/uploads/2023/03/android-chrome-512x512-1.png";
   $payload["datePublished"] = $post_data->post_date;
   $payload["dateModified"] = $post_data->post_modified;
   $payload["image"] = $post_thumb;
@@ -72,13 +77,13 @@ if (is_single()) {
     "https://www.instagram.com/mybluekitchenvt/"
   ];
   $payload["contactPoint"] = [
-    ["@type" => "ContactPoint",
+    [
+      "@type" => "ContactPoint",
       "telephone" => "802-696-9265",
       "email" => "jill@mybluekitchen.cooking",
       "contactType" => "leadership"
     ]
   ];
-  $payload["logo"] = "https://mybluekitchen.cooking/wp-content/uploads/2023/03/android-chrome-512x512-1.png";
 }
 
 ?>
