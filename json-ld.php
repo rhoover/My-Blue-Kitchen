@@ -65,12 +65,12 @@ if (is_single()) {
   $payload["datePublished"] = $post_data->post_date;
   $payload["dateModified"] = $post_data->post_modified;
   $payload["image"] = $post_thumb;
-  $payload["RecipeExcerpt"] = get_field('grabber_quote');
+  $payload["RecipeExcerpt"] = get_field("grabber_quote");
   $payload["RecipeBody"] = $post_data->post_content;
   $payload["RecipeCategories"] = array_map( function($category){ return $category->cat_name; }, $categories );
-  $payload["RecipeIngredients"] = get_field('recipe_ingredients');
-  $payload["RecipeInstructions"] = get_field('recipe_methods');
-  $payload["RecipeNotes"] = get_field('recipe_notes');
+  $payload["RecipeIngredients"] = get_field("recipe_ingredients");
+  $payload["RecipeInstructions"] = get_field("recipe_methods");
+  $payload["RecipeNotes"] = get_field("recipe_notes");
   $payload["sameAs"] = [
     "https://www.facebook.com/mybluekitchen",
     "https://mybluestore.cooking",
