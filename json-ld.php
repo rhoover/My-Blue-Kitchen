@@ -54,10 +54,11 @@ if ( is_search() || is_archive() ) {
 
 // This appears on every page
 $payload["name"] = "My Blue Kitchen";
+$payload["url"] = "https://mybluekitchen.cooking/";
 $payload["Publisher"] = [[
   "@type"=> "FoodEstablishment",
   "name"=> "My Blue Kitchen",
-  "url"=> "http://mybluekitchen.cooking/",
+  "url"=> "https://mybluekitchen.cooking/",
   "address"=> [[
     "@type"=> "PostalAddress",
     "streetAddress"=> "146B Sylvan Woods Drive",
