@@ -60,7 +60,7 @@
       fill: #BD081C;
     }
   }
-  &-etsy {
+  &-store {
     color: inherit;
     text-decoration: none;
     align-self: center;
@@ -69,8 +69,23 @@
       justify-self: end;
     }
     &-svg {
-      width: 52px;
-      height: 36px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &-share-button {
+    color: inherit;
+    align-self: center;
+    font-weight: 700;
+    @media (min-width: 90em) {
+      grid-row: 4 / 5;
+      justify-self: end;
+    }
+    &-svg {
+      width: 32px;
+      height: 32px;
+      padding-top: 8px;
+      fill: #149595f2;
     }
   }
 }

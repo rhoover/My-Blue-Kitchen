@@ -21,7 +21,8 @@
     "backmin": "terser js/backbutton.js -c -o js/min/backbutton-min.js",
     "googlemin": "terser js/google-analytics.js -c -o js/min/google-analytics-min.js",
     "searchmin": "terser js/search-reveal.js -c -o js/min/search-reveal-min.js",
-    "navcheckmin": "terser js/navcheck.js -c -o js/min/navcheck-min.js"
+    "navcheckmin": "terser js/navcheck.js -c -o js/min/navcheck-min.js",
+    "sharemin": "terser js/share.js -c -o js/min/share-min.js"
   },
   "author": "",
   "license": "ISC",
