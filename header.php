@@ -82,6 +82,16 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="manifest" href="<?php  echo esc_url( get_template_directory_uri() . '/manifest.webmanifest' ); ?>">
+	<!-- <link rel="canonical" href="<?php echo get_permalink() ?>"> -->
+	<!-- Self referential canonical tag on all pages -->
+<?php
+   if ( is_front_page() ) {
+      $canonical_url = get_home_url();
+   } else {
+      $canonical_url = get_permalink();
+   }
+?>
+<link rel="canonical" href="<?php echo $canonical_url ?>" />
 
 	<!-- Favicon For Everybody -->
 	<link rel="icon"

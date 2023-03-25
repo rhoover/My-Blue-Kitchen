@@ -76,6 +76,18 @@ $payload["Publisher"] = [[
   "image"=> "https://mybluekitchen.cooking/wp-content/themes/mbk/images/flames-large.jpg",
   "logo"=> "https://mybluekitchen.cooking/wp-content/uploads/2023/03/android-chrome-512x512-1.png"
 ]];
+$payload["Author"] = [[
+  "@type"=> "person",
+  "name"=> "Robin Hoover",
+  "url"=> "https://moosedog.io",
+  "image"=> "https://moosedog.io/mds-images/apple-touch-icon-144x144.png",
+  "contactPoint"=> [[
+    "@type" => "ContactPoint",
+    "telephone"=> "+18026962455",
+    "email"=> "robin@moosedog.io",
+    "contactType"=> "Web Developer"
+    ]]
+]];
 $payload["sameAs"] = [
   "https://www.facebook.com/mybluekitchen",
   "https://mybluestore.cooking",
