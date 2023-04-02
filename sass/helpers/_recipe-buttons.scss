@@ -1,7 +1,9 @@
 %recipe-buttons {
-  display: flex;
-  justify-content: space-evenly;
-  width: 45%;
+  // display: flex;
+  // justify-content: space-around;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width: 90%;
   padding: 1rem 0px;
   border-radius: 0.5rem;
   border: 1px solid setcolor(sea-blue, base);
@@ -10,9 +12,11 @@
   }
   & svg {
     align-self: center;
+    justify-self: center;
   }
   & p {
     align-self: center;
+    justify-self: center;
     font-size: ms(-1);
   }
 }

@@ -81,8 +81,12 @@
         line-height: ms(3);
       }
       &-buttons {
-        display: flex;
-        justify-content: space-evenly;
+        // display: flex;
+        // justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+        align-items: center;
       }
     }
 }
@@ -101,14 +105,12 @@
 }
 
 .print-button {
+  grid-column: 1 / 2;
   @extend %recipe-buttons;
 }
 .share-button {
+  grid-column: 2 / 3;
   @extend %recipe-buttons;
-  & svg {
-    height: 24px;
-    width: 24px;
-  }
 }
 
 
