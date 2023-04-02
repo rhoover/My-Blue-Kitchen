@@ -1,0 +1,18 @@
+%recipe-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 45%;
+  padding: 1rem 0px;
+  border-radius: 0.5rem;
+  border: 1px solid setcolor(sea-blue, base);
+  &:hover {
+    cursor: pointer;
+  }
+  & svg {
+    align-self: center;
+  }
+  & p {
+    align-self: center;
+    font-size: ms(-1);
+  }
+}

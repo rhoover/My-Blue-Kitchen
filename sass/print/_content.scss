@@ -51,7 +51,10 @@
       grid-column: 1 / 2;
       grid-row: 2 / 3;
       & p {
-        margin-bottom: 10px;
+        line-height: ms(1);
+        display: list-item;
+        list-style: circle;
+        margin-left: 1.5rem;
       }
     }
     &-steps {
