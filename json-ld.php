@@ -1,6 +1,6 @@
 <?php 
 // https://builtvisible.com/implementing-json-ld-wordpress/
-// JSON-LD for WordPress Home Articles and Author Pages
+
  // Stuff for any page
 function get_post_data() {
   global $post;
@@ -18,7 +18,7 @@ $post_url = get_permalink();
 $post_thumb = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
 
 // this goes first to estalish context regardless of page/post
-$payload["@context"] = "http://schema.org/";
+$payload["@context"] = "https://schema.org/";
 
 // We do all this separately so we keep the right things for organization together
 if (is_front_page()) {
@@ -36,11 +36,11 @@ if (is_single()) {
   $payload["dateModified"] = $post_data->post_modified;
   $payload["image"] = $post_thumb;
   $payload["RecipeExcerpt"] = get_field("grabber_quote");
-  $payload["RecipeBody"] = $post_data->post_content;
+  // $payload["RecipeBody"] = $post_data->post_content;
   $payload["RecipeCategory"] = array_map( function($category){ return $category->cat_name; }, $categories );
   $payload["RecipeIngredient"] = get_field("recipe_ingredients");
-  $payload["RecipeInstructions"] = get_field("recipe_methods");
-  $payload["RecipeNotes"] = get_field("recipe_notes");
+  // $payload["RecipeInstructions"] = get_field("recipe_methods");
+  // $payload["RecipeNotes"] = get_field("recipe_notes");
 };
 
 if ( is_search() || is_archive() ) {
