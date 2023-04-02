@@ -49,7 +49,7 @@
           <p>Print Recipe</p>
         </div>
         <div class="share-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" class="footer-share-button-svg"><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M18 22a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-14a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path stroke="#000" d="m15.5 6.5-7 4m0 3 7 4"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" class="share-button-svg"><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M18 22a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-14a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path stroke="#000" d="m15.5 6.5-7 4m0 3 7 4"/></svg>
           <p>Share Recipe</p>
         </div>
       </div>

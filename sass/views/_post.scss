@@ -98,11 +98,9 @@
 }
 
 .print-button {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  align-items: center;
-  width: max-content;
-  // margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 45%;
   padding: 1rem 0.5rem;
   border-radius: 0.5rem;
   border: 1px solid setcolor(sea-blue, base);
@@ -110,15 +108,19 @@
     cursor: pointer;
   }
   & svg {
-    grid-column: 1 / 2;
+    align-self: center;
   }
   & p {
-    grid-column: 2 / 3;
-    padding-left: 0.5rem;
+    align-self: center;
+    font-size: ms(-1);
   }
 }
 .share-button {
   @extend .print-button;
+  & svg {
+    height: 24px;
+    width: 24px;
+  }
 }
 
 
