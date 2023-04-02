@@ -7,8 +7,7 @@
   const pageTitle = document.title;
 
   if (navigator.share) {
-    footerShareButton.style.display = 'block';
-    recipeShareButton.style.display = 'block';
+    footerShareButton.style.display = 'grid';
     footerShareButton.addEventListener('click', () =>
       navigator.share({
         title: pageTitle,
@@ -16,6 +15,7 @@
       })
     );
     if (recipeShareButton) {
+      recipeShareButton.style.display = 'grid';
       recipeShareButton.addEventListener('click', () =>
         navigator.share({
           title: pageTitle,

@@ -3,6 +3,7 @@
   // justify-content: space-around;
   display: grid;
   grid-template-columns: 25% 75%;
+  grid-template-rows: 1fr;
   width: 90%;
   padding: 1rem 0px;
   border-radius: 0.5rem;
@@ -11,10 +12,12 @@
     cursor: pointer;
   }
   & svg {
+    grid-row: 1 / 2;
     align-self: center;
     justify-self: center;
   }
-  & p {
+  & p {  
+    grid-row: 1 / 2;
     align-self: center;
     justify-self: center;
     font-size: ms(-1);
