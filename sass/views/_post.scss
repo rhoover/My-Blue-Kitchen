@@ -77,6 +77,10 @@
       & > p {
         line-height: ms(3);
       }
+      &-buttons {
+        display: flex;
+        justify-content: space-evenly;
+      }
     }
 }
 
@@ -87,6 +91,9 @@
   }
   &-post {
     @extend .cat-list;
+    & p {
+      margin-bottom: ms(1);
+    }
   }
 }
 
@@ -95,8 +102,8 @@
   grid-template-columns: max-content max-content;
   align-items: center;
   width: max-content;
-  margin-top: 3rem;
-  padding: 1rem 2rem;
+  // margin-top: 3rem;
+  padding: 1rem 0.5rem;
   border-radius: 0.5rem;
   border: 1px solid setcolor(sea-blue, base);
   &:hover {
@@ -107,8 +114,11 @@
   }
   & p {
     grid-column: 2 / 3;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
   }
+}
+.share-button {
+  @extend .print-button;
 }
 
 

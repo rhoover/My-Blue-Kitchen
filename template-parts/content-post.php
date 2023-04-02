@@ -43,9 +43,15 @@
           <p><?php echo get_field('recipe_notes'); ?></p>
         <?php endif; ?>
       </div>
-      <div class="print-button">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 17H19C20.1046 17 21 16.1046 21 15V11C21 9.89543 20.1046 9 19 9H5C3.89543 9 3 9.89543 3 11V15C3 16.1046 3.89543 17 5 17H7M9 21H15C16.1046 21 17 20.1046 17 19V15C17 13.8954 16.1046 13 15 13H9C7.89543 13 7 13.8954 7 15V19C7 20.1046 7.89543 21 9 21ZM17 9V5C17 3.89543 16.1046 3 15 3H9C7.89543 3 7 3.89543 7 5V9H17Z" stroke="#149595" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <p>Print Recipe</p>
+      <div class="post-recipe-buttons">
+        <div class="print-button">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 17H19C20.1046 17 21 16.1046 21 15V11C21 9.89543 20.1046 9 19 9H5C3.89543 9 3 9.89543 3 11V15C3 16.1046 3.89543 17 5 17H7M9 21H15C16.1046 21 17 20.1046 17 19V15C17 13.8954 16.1046 13 15 13H9C7.89543 13 7 13.8954 7 15V19C7 20.1046 7.89543 21 9 21ZM17 9V5C17 3.89543 16.1046 3 15 3H9C7.89543 3 7 3.89543 7 5V9H17Z" stroke="#149595" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Print Recipe</p>
+        </div>
+        <div class="share-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" class="footer-share-button-svg"><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M18 22a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-14a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path stroke="#000" d="m15.5 6.5-7 4m0 3 7 4"/></svg>
+          <p>Share Recipe</p>
+        </div>
       </div>
     </section>
     <?php if (get_field('post_addendum') ): ?>
@@ -98,6 +104,7 @@
     ?>
     </section>
   <section class="cat-list-post">
+    <p>All My Recipe Categories</p>
     <?php
       $exclude_slugs = array( 'musings', 'pantry', 'equipment' );
       $exclude_ids = array();
