@@ -29,6 +29,7 @@ $global_schema = [
       "@id" => $site_url . "/#organization",
       "url" => $site_url,
       "image"=> $site_url . "/wp-content/themes/mbk/images/flames-large.jpg",
+      "telephone" => "+18026969265",
       "logo"=> array (
         "@type" => "ImageObject",
         "@id" => $site_url . "/#organizationLogo",
