@@ -1,5 +1,4 @@
 <?php 
-// https://builtvisible.com/implementing-json-ld-wordpress/
 
  // Stuff for any page
 function get_post_data() {
@@ -7,96 +6,122 @@ function get_post_data() {
   return $post;
 }
 
-// Stuff for any page, if it exists
+// Detailed stuff for any page, if it exists
 $post_data = get_post_data();
 
-// Stuff for specific pages
+// Very detailed stuff for specific posts
 $category = get_the_category();
 $categories = get_the_category($post_data->ID);
 $author_data = get_userdata($post_data->post_author);
 $post_url = get_permalink();
 $post_thumb = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+$site_url = get_site_url();
 
-// this goes first to estalish context regardless of page/post
-$payload["@context"] = "https://schema.org/";
+$global_schema = [
+  "@context" => "https://schema.org/",
+  "@type" => "Blog",
+  "name" => "My Blue Kitchen",
+  "image"=> $site_url . "/wp-content/themes/mbk/images/flames-large.jpg",
+  "@graph" => array(
 
-// We do all this separately so we keep the right things for organization together
-if (is_front_page()) {
-  $payload["@type"] = "Website";
-};
+    [
+      "@type" => "Organization",
+      "@id" => $site_url . "/#organization",
+      "url" => $site_url,
+      "image"=> $site_url . "/wp-content/themes/mbk/images/flames-large.jpg",
+      "logo"=> array (
+        "@type" => "ImageObject",
+        "@id" => $site_url . "/#organizationLogo",
+        "url" => $site_url . "/wp-content/uploads/2023/03/android-chrome-512x512-1.png"
+      ),
+      "address" => array (
+        "@type"=> "PostalAddress",
+        "@id" => $site_url . "/#organizationAddress",
+        "streetAddress"=> "146B Sylvan Woods Drive",
+        "addressLocality"=> "Stowe",
+        "addressRegion"=> "VT",
+        "postalCode"=> "05672",
+        "addressCountry"=> "US"
+      ),
+      "contactPoint" => array(
+        "@type" => "ContactPoint",
+        "@id" => $site_url . "/#organizationContactPoint",
+        "name" => "Jill Vize",
+        "telephone" => "+18026969265",
+        "email" => "jill@mybluekitchen.cooking",
+        "contactType" => "leadership"
+      ),
+      "sameAs" => [
+        "https://www.facebook.com/mybluekitchen",
+        "https://mybluestore.cooking",
+        "https://www.instagram.com/mybluekitchenvt/"
+      ],
+      "memberOf" => array(
+        "@type" => "Organization",
+        "@id" => "https://www.capitalcityfarmersmarket.com/#organization",
+        "name" => "Capital City Farmers Market",
+        "url" => "https://www.capitalcityfarmersmarket.com/"
+      ),
+    ], // end Organization
 
-// This gets the data for both the user who wrote that particular item and the post data
-if (is_single()) {
-  $payload["@type"] = "Recipe";
-  $payload["url"] = $post_url;
-  $payload["name"] = $post_data->post_title;
-  $payload["Publisher"] = "My Blue Kitchen";
-  $payload["author"] = array( "@type" => "Person", "name" => $author_data->display_name, );
-  $payload["datePublished"] = $post_data->post_date;
-  $payload["dateModified"] = $post_data->post_modified;
-  $payload["image"] = $post_thumb;
-  $payload["RecipeExcerpt"] = get_field("grabber_quote");
-  // $payload["RecipeBody"] = $post_data->post_content;
-  $payload["RecipeCategory"] = array_map( function($category){ return $category->cat_name; }, $categories );
-  $payload["RecipeIngredient"] = get_field("recipe_ingredients");
-  // $payload["RecipeInstructions"] = get_field("recipe_methods");
-  // $payload["RecipeNotes"] = get_field("recipe_notes");
-};
+    [
+      "@type" => "Website",
+      "@id" => $site_url . "/#website",
+      "name" => "My Blue Kitchen",
+      "url" => $site_url,
+      "description" => get_bloginfo("description"),
+      "inLanguage" => "en-US",
+      "publisher" => array(
+        "@type"=> "FoodEstablishment",
+        "@id" => $site_url . "/#organization",
+        "name"=> "My Blue Kitchen",
+        "url"=> $site_url
+      ),
+      "potentialAction"=> array(
+        "@type" => "SearchAction",
+        "target" => $site_url . "/?s={search_term}",
+        "query-input" => "required name=search_term"
+      )
+    ], // end Website
+  ) // end @graph
+]; //end global_schema
+
+
+if ( is_single() ) {
+  $recipe_schema = array(
+    "@type" => "Recipe",
+    "@id" => $site_url . "/#recipe",
+    "url" => $post_url,
+    "author" => array(
+      "@type" => "Person",
+      "@id" => $post_url . "#author",
+      "name" => $author_data->display_name
+    ),
+    "datePublished" => $post_data->post_date,
+    "dateModified" => $post_data->post_modified,
+    "image" => $post_thumb,
+    "about" => get_field("grabber_quote"),
+    "RecipeCategory" => array_map( function($category){ return $category->cat_name; }, $categories )
+  ); // end $recipe_schema
+    array_push($global_schema["@graph"], $recipe_schema);
+    $mbkSD = $global_schema;
+  } else {
+    $mbkSD = $global_schema;
+}; // end if
 
 if ( is_search() || is_archive() ) {
-  $payload["@type"] = "SearchResultsPage";
-  $payload["name"] = "My Blue Kitchen Site-Search Results";
-  $payload["Publisher"] = "My Blue Kitchen";
-  $payload['url'] = "https://mybluekitchen.cooking" . add_query_arg( null, null );
-  $payload["logo"] = "https://mybluekitchen.cooking/wp-content/uploads/2023/03/android-chrome-512x512-1.png";
-  $payload["image"] = esc_html( get_template_directory_uri() . '/images/flames-large.jpg' );
-};
-
-// This appears on every page
-$payload["name"] = "My Blue Kitchen";
-$payload["url"] = "https://mybluekitchen.cooking/";
-$payload["Publisher"] = [[
-  "@type"=> "FoodEstablishment",
-  "name"=> "My Blue Kitchen",
-  "url"=> "https://mybluekitchen.cooking/",
-  "address"=> [[
-    "@type"=> "PostalAddress",
-    "streetAddress"=> "146B Sylvan Woods Drive",
-    "addressLocality"=> "Stowe",
-    "addressRegion"=> "VT",
-    "postalCode"=> "05672",
-    "addressCountry"=> "US"
-  ]],
-  "contactPoint"=> [[
-    "@type" => "ContactPoint",
-    "telephone" => "+18026969265",
-    "email" => "jill@mybluekitchen.cooking",
-    "contactType" => "leadership"
-  ]],
-  "image"=> "https://mybluekitchen.cooking/wp-content/themes/mbk/images/flames-large.jpg",
-  "logo"=> "https://mybluekitchen.cooking/wp-content/uploads/2023/03/android-chrome-512x512-1.png"
-]];
-$payload["Author"] = [[
-  "@type"=> "person",
-  "name"=> "Robin Hoover",
-  "url"=> "https://moosedog.io",
-  "image"=> "https://moosedog.io/mds-images/apple-touch-icon-144x144.png",
-  "contactPoint"=> [[
-    "@type" => "ContactPoint",
-    "telephone"=> "+18026962455",
-    "email"=> "robin@moosedog.io",
-    "contactType"=> "Web Developer"
-    ]]
-]];
-$payload["sameAs"] = [
-  "https://www.facebook.com/mybluekitchen",
-  "https://mybluestore.cooking",
-  "https://www.instagram.com/mybluekitchenvt/"
-];
-$payload["potentialAction"] = [[
-    "@type" => "SearchAction",
-    "target" => "https://mybluekitchen.cooking/?s={search_term}",
-    "query-input" => "required name=search_term"
-  ]];
+  $searchSchema = array(
+    "@type" => "SearchResultsPage",
+    "name" => "My Blue Kitchen Site-Search Results",
+    "Publisher" => "My Blue Kitchen",
+    "url" => $site_url . add_query_arg( null, null ),
+    "logo" => $site_url . "/wp-content/uploads/2023/03/android-chrome-512x512-1.png",
+    "image" => $site_url . "/wp-content/themes/mbk/images/flames-large.jpg"
+  ); // end $searchSchema
+  array_push($global_schema["@graph"], $searchSchema);
+  $mbkSD = $global_schema;
+} else {
+  $mbkSD = $global_schema;
+}; // end if
 
 ?>
