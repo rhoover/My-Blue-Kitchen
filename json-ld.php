@@ -17,27 +17,26 @@ $post_url = get_permalink();
 $post_thumb = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
 $site_url = get_site_url();
 
+// On to the show
 $global_schema = [
   "@context" => "https://schema.org/",
-  "@type" => "Blog",
+  "@type" => "Website",
   "name" => "My Blue Kitchen",
+  "url" => $site_url,
   "image"=> $site_url . "/wp-content/themes/mbk/images/flames-large.jpg",
-  "@graph" => array(
+  "creator" => array(
 
+    // begin Organization
     [
       "@type" => "Organization",
       "@id" => $site_url . "/#organization",
       "url" => $site_url,
       "image"=> $site_url . "/wp-content/themes/mbk/images/flames-large.jpg",
       "telephone" => "+18026969265",
-      "logo"=> array (
-        "@type" => "ImageObject",
-        "@id" => $site_url . "/#organizationLogo",
-        "url" => $site_url . "/wp-content/uploads/2023/03/android-chrome-512x512-1.png"
-      ),
+      "logo" => $site_url . "/wp-content/uploads/2023/03/android-chrome-512x512-1.png",
       "address" => array (
         "@type"=> "PostalAddress",
-        "@id" => $site_url . "/#organizationAddress",
+        "@id" => $site_url . "/#organizationaddress",
         "streetAddress"=> "146B Sylvan Woods Drive",
         "addressLocality"=> "Stowe",
         "addressRegion"=> "VT",
@@ -46,7 +45,7 @@ $global_schema = [
       ),
       "contactPoint" => array(
         "@type" => "ContactPoint",
-        "@id" => $site_url . "/#organizationContactPoint",
+        "@id" => $site_url . "/#organizationcontactpoint",
         "name" => "Jill Vize",
         "telephone" => "+18026969265",
         "email" => "jill@mybluekitchen.cooking",
@@ -59,12 +58,13 @@ $global_schema = [
       ],
       "memberOf" => array(
         "@type" => "Organization",
-        "@id" => "https://www.capitalcityfarmersmarket.com/#organization",
+        "@id" => $site_url . "/#memberof",
         "name" => "Capital City Farmers Market",
         "url" => "https://www.capitalcityfarmersmarket.com/"
       ),
     ], // end Organization
 
+    // begin Website
     [
       "@type" => "Website",
       "@id" => $site_url . "/#website",
@@ -72,19 +72,21 @@ $global_schema = [
       "url" => $site_url,
       "description" => get_bloginfo("description"),
       "inLanguage" => "en-US",
+      "screenshot" => $site_url . "/images/screenshot.png",
       "publisher" => array(
         "@type"=> "FoodEstablishment",
-        "@id" => $site_url . "/#organization",
+        "@id" => $site_url . "/#publisher",
         "name"=> "My Blue Kitchen",
         "url"=> $site_url
       ),
       "potentialAction"=> array(
         "@type" => "SearchAction",
+        "@id" => $site_url . "/#potentialaction",
         "target" => $site_url . "/?s={search_term}",
         "query-input" => "required name=search_term"
       )
     ], // end Website
-  ) // end @graph
+  ) // end creator
 ]; //end global_schema
 
 
