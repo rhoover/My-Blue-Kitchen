@@ -11,6 +11,10 @@
 
 ?>
 
+<div class="home-share">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path d="M18 2c-1.645 0-3 1.355-3 3 0 .191.022.377.057.559L7.922 9.72A2.969 2.969 0 0 0 6 9c-1.645 0-3 1.355-3 3s1.355 3 3 3c.732 0 1.399-.278 1.922-.72l7.135 4.16A2.956 2.956 0 0 0 15 19c0 1.645 1.355 3 3 3s3-1.355 3-3-1.355-3-3-3c-.733 0-1.398.28-1.922.723l-7.135-4.164C8.978 12.377 9 12.19 9 12c0-.191-.022-.377-.057-.559l7.135-4.162C16.601 7.722 17.268 8 18 8c1.645 0 3-1.355 3-3s-1.355-3-3-3zm0 2c.564 0 1 .436 1 1 0 .564-.436 1-1 1-.564 0-1-.436-1-1 0-.564.436-1 1-1zM6 11c.564 0 1 .436 1 1 0 .564-.436 1-1 1-.564 0-1-.436-1-1 0-.564.436-1 1-1zm12 7c.564 0 1 .436 1 1 0 .564-.436 1-1 1-.564 0-1-.436-1-1 0-.564.436-1 1-1z"/></svg>
+</div>
+
 </main>
 
 <footer id="footer" class="footer <?php if (is_404()) {echo "footer-fourohfour";}; ?>">
@@ -95,10 +99,18 @@
 	?>
 </script>
 
-<!-- share button behavior-->
+<!-- share-footer button behavior-->
 <script>
 	<?php 
-		$sharebutton =  get_template_directory() . '/js/min/share-min.js';
+		$sharebutton =  get_template_directory() . '/js/min/share-footer-min.js';
+		echo file_get_contents($sharebutton);
+	?>
+</script>
+
+<!-- share-everywhere button behavior-->
+<script>
+	<?php 
+		$sharebutton =  get_template_directory() . '/js/min/share-everywhere-min.js';
 		echo file_get_contents($sharebutton);
 	?>
 </script>
