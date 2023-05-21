@@ -24,6 +24,11 @@ $global_schema = [
   "name" => "My Blue Kitchen",
   "url" => $site_url,
   "image"=> $site_url . "/wp-content/themes/mbk/images/flames-large.jpg",
+  "sameAs" => [
+    "https://www.facebook.com/mybluekitchen",
+    "https://mybluestore.cooking",
+    "https://www.instagram.com/mybluekitchenvt/"
+  ],
   "creator" => array(
 
     // begin Organization
@@ -51,11 +56,6 @@ $global_schema = [
         "email" => "jill@mybluekitchen.cooking",
         "contactType" => "leadership"
       ),
-      "sameAs" => [
-        "https://www.facebook.com/mybluekitchen",
-        "https://mybluestore.cooking",
-        "https://www.instagram.com/mybluekitchenvt/"
-      ],
       "memberOf" => array(
         "@type" => "Organization",
         "@id" => $site_url . "/#memberof",
