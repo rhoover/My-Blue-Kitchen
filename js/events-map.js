@@ -1,5 +1,4 @@
 let map;
-var eventMarkers = [];
 
 function initMap() {
 
@@ -95,7 +94,7 @@ function initMap() {
 
   //get my event data asynchronously
   async function getEvents() {
-    const response = await fetch('/data/events.json');
+    const response = await fetch('/wp-content/themes/mbk/data/events.json');
     const eventsData = await response.json();
     return eventsData;
   };
@@ -107,6 +106,7 @@ function initMap() {
     //initialize marker popup thing and variables
     let infowindow = new google.maps.InfoWindow({});
     let marker, count;
+    var eventMarkers = [];
     
     //create content for infowindow
     function windowContent(name, town, event, image) {
@@ -114,9 +114,6 @@ function initMap() {
       content.setAttribute('class', 'events-map-infoslider');
 
       content.innerHTML = `
-      <div class="events-map-infoslider-image">
-        <img src="${image}" alt="${event}-logo"/>
-      </div>
       <div class="events-map-infoslider-details">
         <p class="events-map-infoslider-name">${name}</p>
         <p class="events-map-infoslider-address">${town}, VT</p>
@@ -134,7 +131,7 @@ function initMap() {
         position: new google.maps.LatLng(events[count].latitude, events[count].longitude),
         map: map,
         icon: {url: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png"},
-        title: 'Cidery Info:'
+        title: 'Events Info:'
       });
 
       eventMarkers.push(marker);
@@ -144,10 +141,40 @@ function initMap() {
         return function () {
           infowindow.setContent(windowContent(events[count].name, events[count].town, events[count].event));
           infowindow.open(map, marker);
-        }
+        };
       })(marker, count));
     } // end for loop
-  };
+
+    let eventsSection = document.querySelector('.events-items');
+
+    eventsSection.addEventListener('click', (event) => {
+      let chosenButtonID = event.target.dataset.id;
+      mapTarget.scrollIntoView({behavior: "smooth", block: "end"});
+
+      switch (chosenButtonID) {
+        case "waterbury":
+          google.maps.event.trigger(eventMarkers[0],'click');
+        break;
+        case "montpelier-summer":
+          google.maps.event.trigger(eventMarkers[1],'click');
+        break;
+        case "parkstreet":
+          google.maps.event.trigger(eventMarkers[2],'click');
+        break;
+        case "taste":
+          google.maps.event.trigger(eventMarkers[3],'click');
+        break;
+        case "autumn":
+          google.maps.event.trigger(eventMarkers[4],'click');
+        break;
+      
+        default:
+          break;
+      };
+    });
+
+
+  }; // end handleEvents
 
   handleEvents();
 

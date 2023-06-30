@@ -115,19 +115,21 @@
 	?>
 </script>
 
-<!-- maps init and behavior -->
-<script>
+
 	<?php
 		if (is_page('events')) {
+			echo '<!-- maps init and behavior -->';
+			echo '<script>';
 			$eventsmap =  get_template_directory() . '/js/min/events-map-min.js';
 			echo file_get_contents($eventsmap);
+			echo '</script>';
 		};
 	?>
-</script>
+
 
 <?php
 	if (is_page('events')) {
-
+		echo '<!-- google herself must speak on this matter of maps -->';
 		echo '<script async
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEBOmZu2tJSCVLk9CoPUQFU10EnFyBv9M&callback=initMap">
 		</script>';
