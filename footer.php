@@ -115,5 +115,24 @@
 	?>
 </script>
 
+<!-- maps init and behavior -->
+<script>
+	<?php
+		if (is_page('events')) {
+			$eventsmap =  get_template_directory() . '/js/min/events-map-min.js';
+			echo file_get_contents($eventsmap);
+		};
+	?>
+</script>
+
+<?php
+	if (is_page('events')) {
+
+		echo '<script async
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEBOmZu2tJSCVLk9CoPUQFU10EnFyBv9M&callback=initMap">
+		</script>';
+	};
+?>
+
 </body>
 </html>

@@ -1,10 +1,37 @@
 [
   {
-    "event": "Waterbury",
-    "name": "Waterbury Farmer's Market"
+    "event": "waterbury",
+    "name": "Waterbury Farmer's Market",
+    "town": "Waterbury",
+    "latitude": 44.334749187675946,
+    "longitude": -72.7525594050477
   },
   {
-    "event": "Montpelier",
-    "name": "Capital City Farmer's Market"
+    "event": "montpelier-summer",
+    "name": "Capital City Farmer's Market",
+    "town": "Montpelier",
+    "latitude": 44.26209229305371,
+    "longitude": -72.58278413388754
+  },
+  {
+    "event": "parkstreet",
+    "name": "Art On Park",
+    "town": "Stowe",
+    "latitude": 44.464869321494206,
+    "longitude": -72.68549915200505
+  },
+  {
+    "event": "taste",
+    "name": "Taste of New England",
+    "town": "Stowe",
+    "latitude": 44.53046102027812,
+    "longitude": -72.7803325759442
+  },
+  {
+    "event": "autumn",
+    "name": "Autumn On The Green",
+    "town": "Danville",
+    "latitude": 44.41153150022854,
+    "longitude": -72.14009781633695
   }
 ]

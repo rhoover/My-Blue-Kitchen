@@ -24,7 +24,7 @@
     "navcheckmin": "terser js/navcheck.js -c -o js/min/navcheck-min.js",
     "sharefooter": "terser js/share-footer.js -c -o js/min/share-footer-min.js",
     "share": "terser js/share-everywhere.js -c -o js/min/share-everywhere-min.js",
-    "events": "terser js/events.js -c -o js/min/share-events.js"
+    "events": "terser js/events-map.js -c -o js/min/events-map-min.js"
   },
   "author": "",
   "license": "ISC",
