@@ -250,6 +250,15 @@ function remove_global_styles(){
     wp_dequeue_style( 'global-styles' );
 }
 
+function resy_page_param ($url) {
+	if (is_page( 'reservations' )) {
+		$baseurl = get_permalink();
+	}
+	$url = esc_url( add_query_arg('selected_date', '2023/09/15', $baseurl) );
+	return $url;
+}
+add_filter('post-link', 'resy_page_param', 10, 2);
+
 /**
  * Implement the Custom Header feature.
  */
