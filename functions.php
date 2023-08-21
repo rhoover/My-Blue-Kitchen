@@ -250,14 +250,17 @@ function remove_global_styles(){
     wp_dequeue_style( 'global-styles' );
 }
 
-function resy_page_param ($url) {
-	if (is_page( 'reservations' )) {
-		$baseurl = get_permalink();
+function resy_page_param ($url, $id) {
+	if (1363 == $id) {
+		$url = esc_url( add_query_arg('selected_date', '2023/09/15', $url) );
 	}
-	$url = esc_url( add_query_arg('selected_date', '2023/09/15', $baseurl) );
-	return $url;
+	// if (is_page( 'reservations' )) {
+	// 	$baseurl = get_permalink( get_page_by_title( 'Reservations' ) );
+	// }
+	// $url = esc_url( add_query_arg('selected_date', '2023/09/15', $baseurl) );
+	// return $url;
 }
-add_filter('post-link', 'resy_page_param', 10, 2);
+add_filter('page-link', 'resy_page_param', 10, 2);
 
 /**
  * Implement the Custom Header feature.
