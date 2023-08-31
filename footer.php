@@ -137,6 +137,7 @@
 
 <?php
 	if (is_page('reservations')) {
+		echo '<!-- setting proper date -->';
 		echo '<script>';
 		$setDate = get_template_directory() . '/js/min/resy-date-min.js';
 		echo file_get_contents($setDate);
