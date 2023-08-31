@@ -27,12 +27,13 @@
 	<title>
 		<?php if(is_front_page() || is_home()) {
 			echo get_bloginfo('name');
-		} else{
+		} else {
 			echo get_bloginfo('name');
 			echo " | ";
 			echo wp_title('');
 		}?>
 	</title>
+
 	<meta name="description" content="My Blue Kitchen, Where Confidence Reluctance and Sass Come To A Boil">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">

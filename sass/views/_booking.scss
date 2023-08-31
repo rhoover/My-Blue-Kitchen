@@ -1,13 +1,15 @@
 .rtb-booking-form {
   & fieldset {
     padding: 1.25rem;
+    margin-bottom: ms(6) !important;
     border-radius: 0.25rem;
     border: 1px solid setcolor(sea-blue, dark25);
     &:last-of-type {
       border: none;
     }
     & legend {
-      font-size: ms(3);
+      font-size: ms(4);
+      font-weight: 700;
     }
     & div {
       margin-top: 0px;
@@ -43,4 +45,20 @@
     @extend %big-box-shadow;
     cursor: pointer;
   }
+}
+
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+hr:after {
+  background: #fff;
+  content: '§';
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
 }

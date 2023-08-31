@@ -116,16 +116,15 @@
 </script>
 
 
-	<?php
-		if (is_page('events')) {
-			echo '<!-- maps init and behavior -->';
-			echo '<script>';
-			$eventsmap =  get_template_directory() . '/js/min/events-map-min.js';
-			echo file_get_contents($eventsmap);
-			echo '</script>';
-		};
-	?>
-
+<?php
+	if (is_page('events')) {
+		echo '<!-- maps init and behavior -->';
+		echo '<script>';
+		$eventsmap =  get_template_directory() . '/js/min/events-map-min.js';
+		echo file_get_contents($eventsmap);
+		echo '</script>';
+	};
+?>
 
 <?php
 	if (is_page('events')) {
@@ -134,6 +133,15 @@
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEBOmZu2tJSCVLk9CoPUQFU10EnFyBv9M&callback=initMap">
 		</script>';
 	};
+?>
+
+<?php
+	if (is_page('reservations')) {
+		echo '<script>';
+		$setDate = get_template_directory() . '/js/min/resy-date-min.js';
+		echo file_get_contents($setDate);
+		echo '</script>';
+	}
 ?>
 
 </body>

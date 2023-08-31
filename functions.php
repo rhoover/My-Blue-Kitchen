@@ -250,16 +250,21 @@ function remove_global_styles(){
     wp_dequeue_style( 'global-styles' );
 }
 
-function resy_page_param ($url, $id) {
-	if (1363 == $id) {
-		$url = esc_url( add_query_arg('selected_date', '2023/09/15', $url) );
-	}
+$url = $_SERVER[ 'REQUEST_URI' ];
+if ( $url == "/reservations/") {
+	add_query_arg ( 'selected_date', '2023/09/15', $url);
+}
+
+// function resy_page_param ($url, $id) {
+	// if (1419 == $id) {
+		// $url = esc_url( add_query_arg('selected_date', '2023/09/15', $url) );
+	// }
 	// if (is_page( 'reservations' )) {
 	// 	$baseurl = get_permalink( get_page_by_title( 'Reservations' ) );
 	// }
 	// $url = esc_url( add_query_arg('selected_date', '2023/09/15', $baseurl) );
 	// return $url;
-}
+// }
 add_filter('page-link', 'resy_page_param', 10, 2);
 
 /**
