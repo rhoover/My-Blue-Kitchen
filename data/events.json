@@ -1,9 +1,23 @@
 [
   {
-    "event": "montpelier-summer",
+    "event": "montpelier",
     "name": "Capital City Farmer's Market",
     "town": "Montpelier",
     "latitude": 44.26209229305371,
     "longitude": -72.58278413388754
+  },
+  {
+    "event": "montpelier-thanksgiving",
+    "name": "Capital City Farmer's Market",
+    "town": "Montpelier",
+    "latitude": 44.260918511708915,
+    "longitude": -72.58642067268714
+  },
+  {
+    "event": "craftsbury",
+    "name": "Craftsbury Holiday Market",
+    "town": "Craftsbury",
+    "latitude": 44.65539481422665,
+    "longitude": -72.38203951460615
   }
 ]
