@@ -30,7 +30,7 @@
     bottom: 1rem;
     width: 60px;
     height: 60px;
-    background-color: rgba(setcolor(sea-blue, base),0.95);
+    background-color: rgba(setcolor(sea-blue, base),0.75);
     border-radius: 0% 30% 30% 0%;
     border-top: 1px solid setcolor(sea-blue, dark25);
     border-right: 1px solid setcolor(sea-blue, dark25);
@@ -42,10 +42,16 @@
       display: block;
       position: absolute;
       top: 5px;
-      left: 5px;
-      width: 75%;
-      height: 75%;
+      left: 9px;
+      width: 55%;
+      height: 55%;
       fill: setcolor(white, light25);
+    }
+    &-text {
+      color: setcolor(white, base);
+      position: absolute;
+      top: 31px;
+      left: 4px;
     }
   }
 }
