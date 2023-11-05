@@ -137,7 +137,7 @@
 ?>
 
 <?php
-	if (is_page('reservations')) {
+	if (is_page('nolares')) {
 		echo '<!-- setting proper date -->';
 		echo '<script>';
 		$setDate = get_template_directory() . '/js/min/resy-date-min.js';

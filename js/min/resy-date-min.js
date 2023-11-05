@@ -1,1 +1,1 @@
-(()=>{"use strict";document.querySelector("[name='rtb-date']").value="2023/09/15"})();
+(()=>{"use strict";document.querySelector("[name='rtb-date']").value="2023/11/25"})();
