@@ -136,18 +136,9 @@
 	};
 ?>
 
-<?php
-	if (is_page('neworleans')) {
-		echo '<!-- select amount behavior -->';
-		echo '<script>';
-		$setStyle = get_template_directory() . '/js/min/select-amount-min.js';
-		echo file_get_contents($setStyle);
-		echo '</script>';
-	}
-?>
 
 <?php
-	if (is_page('nolares')) {
+	if (is_page('neworleans')) {
 		echo '<!-- setting proper date -->';
 		echo '<script>';
 		$setDate = get_template_directory() . '/js/min/resy-date-min.js';

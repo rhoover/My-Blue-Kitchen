@@ -109,13 +109,14 @@ function initMap() {
     var eventMarkers = [];
     
     //create content for infowindow
-    function windowContent(name, town, event, image) {
+    function windowContent(name, location, town) {
       var content = document.createElement('div');
       content.setAttribute('class', 'events-map-infoslider');
 
       content.innerHTML = `
       <div class="events-map-infoslider-details">
         <p class="events-map-infoslider-name">${name}</p>
+        <p class="events-map-infoslider-address">${location}</p>
         <p class="events-map-infoslider-address">${town}, VT</p>
       </div>
       `;
@@ -131,7 +132,7 @@ function initMap() {
         position: new google.maps.LatLng(events[count].latitude, events[count].longitude),
         map: map,
         icon: {url: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png"},
-        title: 'Events Info:'
+        title: `Event Info: ${events[count].name}`
       });
 
       eventMarkers.push(marker);
@@ -139,7 +140,7 @@ function initMap() {
       //then add listener for click to pop up info window
       google.maps.event.addListener(marker, 'click', (function (marker, count) {
         return function () {
-          infowindow.setContent(windowContent(events[count].name, events[count].town, events[count].event));
+          infowindow.setContent(windowContent(events[count].name, events[count].location, events[count].town));
           infowindow.open(map, marker);
         };
       })(marker, count));

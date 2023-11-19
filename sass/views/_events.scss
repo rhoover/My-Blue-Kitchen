@@ -48,6 +48,7 @@
       border-radius: 0.25rem;
       border: 1px solid setcolor(sea-blue, base);
       @extend %expando-hover;
+      cursor: pointer;
       & svg {
         height: 25px;
         width: 25px;
