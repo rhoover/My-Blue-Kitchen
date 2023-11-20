@@ -7,6 +7,7 @@
     height: auto;
     width: inherit;
     object-fit: contain;
+    aspect-ratio: auto 2048 / 567;
   }
   &-lede {
     position: absolute;
