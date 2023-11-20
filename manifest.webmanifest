@@ -15,6 +15,11 @@
           "type": "image/png"
       },
       {
+          "src": "/wp-content/themes/mbk/mbk-icns/maskable_icon.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },
+      {
           "src": "/wp-content/themes/mbk/mbk-icns/android-chrome-512x512.png",
           "sizes": "512x512",
           "type": "image/png"
