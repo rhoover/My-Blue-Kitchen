@@ -72,7 +72,6 @@ $global_schema = [
       "url" => $site_url,
       "description" => get_bloginfo("description"),
       "inLanguage" => "en-US",
-      "screenshot" => $site_url . "/images/screenshot.png",
       "publisher" => array(
         "@type"=> "FoodEstablishment",
         "@id" => $site_url . "/#publisher",

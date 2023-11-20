@@ -7,7 +7,7 @@
   "orientation": "portrait",
   "theme_color": "#149595",
   "background_color": "#fdfdfd",
-  "display": "browser",
+  "display": "standalone",
   "icons": [
       {
           "src": "/wp-content/themes/mbk/mbk-icns/android-chrome-192x192.png",
