@@ -172,7 +172,16 @@
 		<svg xmlns='http://www.w3.org/2000/svg' class="header-magnify-svg" viewBox='0 0 512 512'><path d='M221.09,64A157.09,157.09,0,1,0,378.18,221.09,157.1,157.1,0,0,0,221.09,64Z' /><line x1='338.29' y1='338.29' x2='448' y2='448' /></svg>
 	</div>
 	<!-- renders out .header-search-->
-	<?php dynamic_sidebar( 'searchbar-1' ); ?>
+	<!-- <?php dynamic_sidebar( 'searchbar-1' ); ?> -->
+	<div class="header-search">
+		<?php 
+			if ( function_exists( 'wpes_search_form' ) ) {
+				wpes_search_form( array( 
+					'wpessid' => 1367 
+				) );
+			}
+		?>
+	</div>
 
   <?php
     //courtesy of:  http://zoerooney.com/blog/tutorials/removing-list-items-wordpress-menus/

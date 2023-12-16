@@ -105,7 +105,7 @@ add_action( 'after_setup_theme', 'mybluekitchen_setup' );
  */
 function mybluekitchen_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'mybluekitchen' ),
+		'name'          => esc_html__( 'Sidebar', 'mbk' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'mybluekitchen' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -114,7 +114,7 @@ function mybluekitchen_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Searchbar', 'mybluekitchen' ),
+		'name'          => esc_html__( 'Searchbar', 'mbk' ),
 		'id'            => 'searchbar-1',
 		'description'   => esc_html__( 'Add search widget here.', 'mybluekitchen' ),
 		'before_widget' => '<div class="header-search">',
