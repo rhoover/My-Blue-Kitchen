@@ -18,17 +18,20 @@ $post_thumb = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
 $site_url = get_site_url();
 
 // On to the show
-$global_schema = [
+// $global_schema = [
+$global_schema = array(
   "@context" => "https://schema.org/",
   "@type" => "Website",
   "name" => "My Blue Kitchen",
   "url" => $site_url,
   "image"=> $site_url . "/wp-content/themes/mbk/images/flames-large.jpg",
-  "sameAs" => [
+  // "sameAs" => [
+  "sameAs" => array (
     "https://www.facebook.com/mybluekitchen",
     "https://mybluestore.cooking",
     "https://www.instagram.com/mybluekitchenvt/"
-  ],
+  // ],
+  ),
   "creator" => array(
 
     // begin Organization
@@ -86,7 +89,8 @@ $global_schema = [
       )
     ], // end Website
   ) // end creator
-]; //end global_schema
+// ]; //end global_schema
+  ); //end global_schema
 
 
 if ( is_single() ) {
