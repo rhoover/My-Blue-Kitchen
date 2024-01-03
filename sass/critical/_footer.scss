@@ -7,7 +7,7 @@
   align-items: center;
   background-color: setcolor(sea-blue, light95);
   border-top: 1px solid setcolor(sea-blue, base);
-  z-index: 300;
+  // z-index: 300;
   & > * {
     grid-column: 2 / 3;
     padding: 1rem 0px;
