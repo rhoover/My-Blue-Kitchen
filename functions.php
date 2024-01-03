@@ -143,6 +143,8 @@ remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
 
 add_filter( 'emoji_svg_url', '__return_false' );
 
+remove_filter( 'the_content', 'wpautop' );
+
 function rh_remove_version() {return '';}
 add_filter('the_generator', 'rh_remove_version');
 
@@ -187,7 +189,13 @@ add_filter('get_the_archive_title', function($title) {
 */
 add_filter( 'wpcf7_load_js', '__return_false' );
 add_filter( 'wpcf7_load_css', '__return_false' );
-
+add_action('wp_print_scripts', function () {
+	global $post;
+	if ( is_a( $post, 'WP_Post' ) && !has_shortcode( $post->post_content, 'contact-form-7') ) {
+		wp_dequeue_script( 'google-recaptcha' );
+		wp_dequeue_script( 'wpcf7-recaptcha' );
+	}
+});
 
 /**
  * Enqueue scripts and styles.

@@ -39,7 +39,7 @@
     grid-column: 2 / 3;
     display: grid;
     @media (min-width: 90em) {
-      grid-template-columns: 15% 85%;
+      grid-template-columns: 5% 85%;
     }
     &-logo {
       grid-column: 1 / 2;
