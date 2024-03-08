@@ -9,14 +9,14 @@
   const contentElemPos = contentElem.offsetTop;
 
   if (navigator.share) {
-    window.addEventListener('scroll', function () {
-      let scrollPos = window.scrollY;
-      if (scrollPos >= contentElemPos) {
-        homeShareButton.style.display = 'block';
-      } else {
-        homeShareButton.style.display = 'none';  
-      };
-    });
+    // window.addEventListener('scroll', function () {
+    //   let scrollPos = window.scrollY;
+    //   if (scrollPos >= contentElemPos) {
+    //     homeShareButton.style.display = 'block';
+    //   } else {
+    //     homeShareButton.style.display = 'none';  
+    //   };
+    // });
     homeShareButton.addEventListener('click', () =>
       navigator.share({
         title: pageTitle,
