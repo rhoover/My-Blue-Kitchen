@@ -16,7 +16,7 @@
 }?>
 
 
-<!-- <article class="post-article" id="post-<?php the_ID(); ?>"> -->
+<article class="post-article" id="post-<?php the_ID(); ?>">
 
 	<?php
     the_content();
@@ -128,5 +128,5 @@
       echo $links;
     ?>
   </section>
-<!-- </article> -->
+</article>
 <!-- .post-article -->

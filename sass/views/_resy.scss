@@ -7,4 +7,7 @@
   border: 1px solid setcolor(sea-blue, base);
   @extend %big-box-shadow;
   cursor: pointer;
+  &:hover {
+    background-color: setcolor(sea-blue, light75);
+  }
 }

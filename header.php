@@ -13,17 +13,9 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-80T3NNQBVK"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-80T3NNQBVK');
-	</script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<!-- <title><?php wp_title( '|', true, 'right' ); get_bloginfo('name'); ?></title> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>
 		<?php if(is_front_page() || is_home()) {
 			echo get_bloginfo('name');
@@ -34,28 +26,16 @@
 		}?>
 	</title>
 
-	<meta name="description" content="My Blue Kitchen, Where Confidence Reluctance and Sass Come To A Boil">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="My Blue Kitchen">
-	<meta name="apple-mobile-web-app-title" content="My Blue Kitchen">
-	<meta name='apple-touch-fullscreen' content='yes'>
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="theme-color" content="#149595">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-80T3NNQBVK"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	<!-- Because Microsoft Exists, SAMF's -->
-	<meta name="msapplication-TileImage" content="<?php  echo esc_url( get_template_directory_uri() . '/mbk-icns/mstile-150x150.png' ); ?>">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-starturl" content="mybluekitchen.cooking">
-	<meta name="msapplication-config" content="/mbk-icns/browserconfig.xml">
-	<meta name="msapplication-navbutton-color" content="#149595">
+		gtag('config', 'G-80T3NNQBVK');
+	</script>
 
-	<!-- Chrome for Android Add To Homescreen -->
-	<meta name="mobile-web-app-capable" content="yes">
-
-	<!-- Chrome for Android Tool Bar Color -->
-	<meta name="theme-color" content="#56721C">
-	
 	<?php
 		echo "<style id=\"critical\">";
 		$base_dir = trailingslashit(get_template_directory());
@@ -66,7 +46,6 @@
 		echo "</style>";
 	?>
 	
-
   <?php
 		if (is_single()) {
 			echo "<style id=\"print\">";
@@ -89,6 +68,27 @@
 		media="tty" onload="this.media='screen' "
 	>
 
+
+	<meta name="description" content="My Blue Kitchen, Where Confidence Reluctance and Sass Come To A Boil">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="My Blue Kitchen">
+	<meta name="apple-mobile-web-app-title" content="My Blue Kitchen">
+	<meta name='apple-touch-fullscreen' content='yes'>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="theme-color" content="#149595">
+
+	<!-- Because Microsoft Exists, SAMF's -->
+	<meta name="msapplication-TileImage" content="<?php  echo esc_url( get_template_directory_uri() . '/mbk-icns/mstile-150x150.png' ); ?>">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-starturl" content="mybluekitchen.cooking">
+	<meta name="msapplication-config" content="/mbk-icns/browserconfig.xml">
+	<meta name="msapplication-navbutton-color" content="#149595">
+
+	<!-- Chrome for Android Add To Homescreen -->
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- Chrome for Android Tool Bar Color -->
+	<meta name="theme-color" content="#56721C">
 
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
