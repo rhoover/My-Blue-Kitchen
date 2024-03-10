@@ -52,6 +52,14 @@
 	?>
 </script>
 
+<!-- build close button in mobile nav menu -->
+<script>
+	<?php
+		$buildclose =  get_template_directory() . '/js/min/navclose-min.js';
+		echo file_get_contents($buildclose);
+	?>
+</script>
+
 <!-- back button behavior -->
 <script>
 	<?php
