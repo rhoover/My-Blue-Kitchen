@@ -11,7 +11,7 @@
   closeItem.textContent = 'Close';
 
 
-  // if (navigator.share()) {
+  if (navigator.share()) {
     navMenu.prepend(closeItem);
 
     closeItem.onclick = () => {
@@ -24,5 +24,5 @@
         menuText.innerHTML = 'Menu'
       };
     };
-  // };
+  };
 })();
