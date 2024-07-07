@@ -3,9 +3,9 @@
     "event": "montpelier",
     "name": "Capital City Farmer's Market",
     "town": "Montpelier",
-    "latitude": 44.26209229305371,
-    "longitude": -72.58278413388754,
-    "location": "Barr Hill Distillery"
+    "latitude": 44.262123645540356,
+    "longitude": -72.58195417492553,
+    "location": "Capital City Farmer's Market"
   },
   {
     "event": "craftsbury",
@@ -14,5 +14,21 @@
     "latitude": 44.65539481422665,
     "longitude": -72.38203951460615,
     "location": "Craftsbury Academy"
+  },
+  {
+    "event": "burlington",
+    "name": "Burlington Farmers Market",
+    "town": "Burlington",
+    "latitude": 44.46984495922316,
+    "longitude": -73.21551821171106,
+    "location": "Burlington Farmers Market"
+  },
+  {
+    "event": "taste",
+    "name": "Taste of New England",
+    "town": "Stowe",
+    "latitude": 44.52897060211079,
+    "longitude": -72.7797469509952,
+    "location": "Spruce Peak - Stowe Mountain Resort"
   }
 ]

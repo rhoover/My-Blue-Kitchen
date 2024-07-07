@@ -6,7 +6,7 @@ function initMap() {
   const mapTarget = document.getElementById('events-map');
   const mapOptions = {
     center: {lat: 44.58792634446149, lng: -72.49345485914775}, 
-    zoom: 8,
+    zoom: 9,
     mapTypeControl: true,
     mapTypeControlOptions: {
         style: google.maps.MapTypeControlStyle.DROPDOWN_MENU

@@ -22,14 +22,15 @@
     the_content();
   ?>
   <?php if ( !in_category( array('musings', 'equipment', 'pantry') ) ): ?>
-    <section class="post-recipe"><!-- .post-recipe -->
+    <!-- .post-recipe -->
+    <section class="post-recipe">
       <h2 class="post-recipe-desc post-recipe-desc-one">The Stuff You Need:</h2>
       <div class="post-recipe-stuff">
         <?php
           the_field('recipe_ingredients');
         ?>
       </div>
-      <h2 class="post-recipe-desc post-recipe-desc-two">How To Do This:</h2>
+      <h2 class="post-recipe-desc post-recipe-desc-two">Here's How It's Done:</h2>
       <div class="post-recipe-steps">
         <?php
           the_field('recipe_methods');
