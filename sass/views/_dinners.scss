@@ -1,0 +1,52 @@
+.dinners {
+  &-header {
+    font-size: ms(3);
+    border-bottom: 2px solid setcolor(blue, light45);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  &-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  &-button-link {
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0px;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid setcolor(sea-blue, base);
+    @extend %big-box-shadow;
+    &:hover {
+      background-color: setcolor(sea-blue, light75);
+    }
+  }
+  &-button {
+    border: none;
+    background: transparent;
+    font-size: ms(2);
+    cursor: pointer;
+  }
+  &-menu {
+    padding: 16px;
+    border: 1px solid setcolor(black, base);
+    border-radius: 16px;
+    margin-bottom: 32px;
+    &-header {
+      font-size: ms(3);
+      padding-top: 32px;
+    }
+    &-line {
+      margin-bottom: 32px;
+    }
+    &-item {
+      display: list-item;
+      list-style-position: outside;
+      margin: 32px;
+      line-height: ms(3);
+    }
+  }
+}
