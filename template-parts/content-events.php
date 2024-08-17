@@ -8,7 +8,7 @@
  */
 ?>
 
-<h2 class="events-list-header">My 2024 Appearances</h2>
+<h2 class="events-list-header">My 2024 Farmers Market Appearances</h2>
 <p>New events and dates will be posted here as they are booked.</p>
 <p>Looking forward to an exciting season, meeting new and old friends!</p>
 <section class="events-items">
@@ -16,9 +16,6 @@
     <h3 class="events-item-header">Montpelier Farmers Market</h3>
     <p class="events-item-daytime">Saturdays 9:00am - 1:00pm</p>
     <!-- <p class="events-item-daytime">Winter Dates are held at the Barr Hill Distillery</p> -->
-    <p class="events-item-days">May: 18th, 25th</p>
-    <p class="events-item-days">June: 1st, 8th, 15th, 29th</p>
-    <p class="events-item-days">July: 6th, 13th, 27th</p>
     <p class="events-item-days">August: 3rd, 10th, 17th, 24th, 31st</p>
     <p class="events-item-days">September: 7th, 14th, 21st, 28th</p>
     <p class="events-item-days">October: 5th, 19th, 26th</p>
@@ -33,8 +30,6 @@
     <h3 class="events-item-header">Burlington Farmers Market</h3>
     <p class="events-item-daytime">Saturdays 9:00am - 2:00pm</p>
     <!-- <p class="events-item-daytime">Winter Dates are held at the Barr Hill Distillery</p> -->
-    <p class="events-item-days">June: 22nd</p>
-    <p class="events-item-days">July: 20th</p>
     <p class="events-item-days">October: 12th</p>
     <a href="https://burlingtonfarmersmarket.org/">Farmers Market Site</a>
     <button class="events-item-button" data-id="burlington">
