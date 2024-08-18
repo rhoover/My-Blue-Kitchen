@@ -5,6 +5,10 @@
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
   }
+  &-date {
+    font-size: ms(-1);
+    color: setcolor(black, light25);
+  }
   &-buttons {
     display: flex;
     flex-wrap: wrap;

@@ -32,6 +32,9 @@
 
 <section class="dinners-menu" id="spain">
   <h2 class="dinners-header">Flavors of Spain</h2>
+
+  <p class="dinners-date">September 15, 2023</p>
+
   <h2 class="dinners-menu-header">APPS</h2>
 
   <hr class="dinners-menu-line"/>
@@ -60,6 +63,8 @@
 <section class="dinners-menu">
 
   <h2 class="dinners-header">Flavors of New Orleans</h2>
+
+  <p class="dinners-date">November 25, 2023</p>
 
   <h2 class="dinners-menu-header">APPS</h2>
 
@@ -91,6 +96,8 @@
 
   <h2 class="dinners-header">Flavors of South America</h2>
 
+  <p class="dinners-date">January 14, 2024</p>
+
   <h2 class="dinners-menu-header">APPS</h2>
 
   <hr class="dinners-menu-line"/>
@@ -121,6 +128,9 @@
 <section class="dinners-menu" id="northafrica">
 
   <h2 class="dinners-header">Flavors of North Africa</h2>
+
+  <p class="dinners-date">June 29, 2024</p>
+
   <h2 class="dinners-menu-header">APPS</h2>
 
   <hr class="dinners-menu-line"/>
@@ -151,6 +161,8 @@
 <section class="dinners-menu">
 
   <h2 class="dinners-header">Flavors of Southeast Asia</h2>
+
+  <p class="dinners-date">July 27, 2024</p>
 
   <h2 class="dinners-menu-header">APPS</h2>
 
