@@ -68,7 +68,6 @@
 		media="tty" onload="this.media='screen' "
 	>
 
-
 	<meta name="description" content="My Blue Kitchen, Where Confidence Reluctance and Sass Come To A Boil">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="My Blue Kitchen">
@@ -90,11 +89,36 @@
 	<!-- Chrome for Android Tool Bar Color -->
 	<meta name="theme-color" content="#56721C">
 
+	<!-- canonical tag on all pages for og -->
+	<?php
+		if ( is_front_page() ) {
+			$accurate_url = get_home_url();
+		} else {
+			$accurate_url = get_permalink();
+		}
+	?>
+
+	<!-- Facebook -->
+	<meta property="og:url" content="<?php echo $accurate_url ?>" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="
+		<?php if(is_front_page() || is_home()) {
+			echo get_bloginfo('name');
+		} else {
+			echo get_bloginfo('name');
+			echo " | ";
+			echo wp_title('');
+		}?>" />
+	<meta property="og:image" content="https://mybluekitchen.cooking/images/flames-large.jpg" />
+	<meta property="og:description" content="My Blue Kitchen, Where Confidence Reluctance and Sass Come To A Boil"/>
+	<meta property="og:site_name" content="My Blue Kitchen" />
+	<meta property="og:locale" content="en_US" />
+
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="manifest" href="<?php  echo esc_url( get_template_directory_uri() . '/manifest.webmanifest' ); ?>">
 
-	<!-- Self referential canonical tag on all pages -->
+	<!-- canonical tag on all pages -->
 	<?php
 		if ( is_front_page() ) {
 			$canonical_url = get_home_url();
@@ -102,7 +126,7 @@
 			$canonical_url = get_permalink();
 		}
 	?>
-	<link rel="canonical" href="<?php echo $canonical_url ?>" />
+	<link rel="canonical" href="<?php echo $canonical_url ?>" >
 
 	<!-- Favicon For Everybody -->
 	<link rel="icon"
