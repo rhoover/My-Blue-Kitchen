@@ -257,7 +257,11 @@ add_filter( 'wp_sitemaps_enabled', '__return_false' );
 add_action( 'wp_enqueue_scripts', 'remove_global_styles' );
 function remove_global_styles(){
     wp_dequeue_style( 'global-styles' );
-}
+};
+
+add_action('wp_head', function() {
+  get_template_part('template-parts/schema');
+});
 
 /**
  * Implement the Custom Header feature.
