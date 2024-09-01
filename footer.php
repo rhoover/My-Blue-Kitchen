@@ -44,14 +44,6 @@
 
 <?php wp_footer(); ?>
 
-<!-- google analytics -->
-<script>
-	<?php 
-		$google =  get_template_directory() . '/js/min/google-analytics-min.js';
-		echo file_get_contents($google);
-	?>
-</script>
-
 <!-- build close button in mobile nav menu -->
 <script>
 	<?php
@@ -124,7 +116,6 @@
 	?>
 </script>
 
-
 <?php
 	if (is_page('events')) {
 		echo '<!-- maps init and behavior -->';
@@ -144,16 +135,14 @@
 	};
 ?>
 
+<!-- google analytics -->
+<script>
+	<?php 
+		$google =  get_template_directory() . '/js/min/google-analytics-min.js';
+		echo file_get_contents($google);
+	?>
+</script>
 
-<?php
-	if (is_page('neworleans')) {
-		echo '<!-- setting proper date -->';
-		echo '<script>';
-		$setDate = get_template_directory() . '/js/min/resy-date-min.js';
-		echo file_get_contents($setDate);
-		echo '</script>';
-	}
-?>
 
 </body>
 </html>
