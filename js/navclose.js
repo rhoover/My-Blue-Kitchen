@@ -12,6 +12,7 @@
 
 
   if (navigator.share) {
+    
     navMenu.prepend(closeItem);
 
     closeItem.onclick = () => {
