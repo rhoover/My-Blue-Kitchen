@@ -11,7 +11,8 @@
   closeItem.textContent = 'Close';
 
 
-  if (navigator.share) {
+  // if (navigator.share) {
+  if (navigator.platform != "Windows" || navigator.platform != "MacIntel" || navigator.platform != "Linux x86_64") {
     
     navMenu.prepend(closeItem);
 
