@@ -1,6 +1,7 @@
 .dinners {
   &-header {
     font-size: ms(3);
+    font-weight: 700;
     border-bottom: 2px solid setcolor(blue, light45);
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
@@ -17,6 +18,7 @@
     cursor: pointer;
   }
   &-button-link {
+    position: relative;
     text-decoration: none;
     text-align: center;
     padding: 1rem 0px;
@@ -24,9 +26,10 @@
     border-radius: 0.5rem;
     border: 1px solid setcolor(sea-blue, base);
     @extend %big-box-shadow;
-    &:hover {
-      background-color: setcolor(sea-blue, light75);
-    }
+    @extend %expando-hover;
+    // &:hover {
+    //   background-color: setcolor(sea-blue, light75);
+    // }
   }
   &-button {
     border: none;
