@@ -28,6 +28,9 @@
   <a href="#southeastasia" class="dinners-button-link">
     <button class="dinners-button">Flavors of Southeast Asia</button>
   </a>
+  <a href="#italy" class="dinners-button-link">
+    <button class="dinners-button">Flavors of Italy</button>
+  </a>
 </section>
 
 <section class="dinners-menu" id="spain">
@@ -35,7 +38,7 @@
 
   <p class="dinners-date">September 15, 2023</p>
 
-  <h2 class="dinners-menu-header">APPS</h2>
+  <h2 class="dinners-menu-header">APPETIZERS</h2>
 
   <hr class="dinners-menu-line"/>
 
@@ -66,7 +69,7 @@
 
   <p class="dinners-date">November 25, 2023</p>
 
-  <h2 class="dinners-menu-header">APPS</h2>
+  <h2 class="dinners-menu-header">APPETIZERS</h2>
 
   <hr class="dinners-menu-line"/>
 
@@ -98,7 +101,7 @@
 
   <p class="dinners-date">January 14, 2024</p>
 
-  <h2 class="dinners-menu-header">APPS</h2>
+  <h2 class="dinners-menu-header">APPETIZERS</h2>
 
   <hr class="dinners-menu-line"/>
 
@@ -125,13 +128,13 @@
   <p  class="dinners-menu-item">Shortbread with Dulce de Leche</p>
 
 </section>
-<section class="dinners-menu" id="northafrica">
+<section class="dinners-menu">
 
   <h2 class="dinners-header">Flavors of North Africa</h2>
 
   <p class="dinners-date">June 29, 2024</p>
 
-  <h2 class="dinners-menu-header">APPS</h2>
+  <h2 class="dinners-menu-header">APPETIZERS</h2>
 
   <hr class="dinners-menu-line"/>
 
@@ -164,7 +167,7 @@
 
   <p class="dinners-date">July 27, 2024</p>
 
-  <h2 class="dinners-menu-header">APPS</h2>
+  <h2 class="dinners-menu-header">APPETIZERS</h2>
 
   <hr class="dinners-menu-line"/>
 
@@ -185,8 +188,41 @@
 
   <hr class="dinners-menu-line"/>
 
+  <span id="italy"></span>
   <p  class="dinners-menu-item">Coconut Ice Cream | Fresh Roasted Peanuts (Vietnam)</p>
   <p  class="dinners-menu-item">Mango Sorbet (Vietnam)</p>
   <p  class="dinners-menu-item">Steamed Pumpkin Cake | Toasted Coconut | Fresh Yoghurt (Thailand)</p>
+
+</section>
+<section class="dinners-menu">
+
+  <h2 class="dinners-header">Flavors of Italy</h2>
+
+  <p class="dinners-date">September 26, 2024</p>
+
+  <h2 class="dinners-menu-header">APPETIZERS</h2>
+
+  <hr class="dinners-menu-line"/>
+
+  <p  class="dinners-menu-item">Salt-Baked Red Beet | Pecorino Chickpeas | Smoked Olive Oil</p>
+  <p  class="dinners-menu-item">Tomato | Local Basil | VT Mozzarella Whip | Balsamic Caviar</p>
+  <p  class="dinners-menu-item">Yellowfin Tuna Medallions | White Bean Salad</p>
+
+  <h2 class="dinners-menu-header">ENTREES</h2>
+
+  <hr class="dinners-menu-line"/>
+
+  <p  class="dinners-menu-item">Stuffed Veal Cutlet | Shaved Ham | Provolone | Spinach Salad</p>
+  <p  class="dinners-menu-item">Winter White Zupa | Squid | Shrimp | Sole | Potato-Leek</p>
+  <p  class="dinners-menu-item">Chicken Piccata Meatballs | Scallion Risotto | Lemon-Caper Butter</p>
+  <p  class="dinners-menu-item">Housemade Saffron Tortelli | Mushroom Ragu | Local Oyster Mushroom Stock</p>
+
+  <h2 class="dinners-menu-header">DESSERTS</h2>
+
+  <hr class="dinners-menu-line"/>
+
+  <p  class="dinners-menu-item">Ricotta Fritters | Raspberry & Amaro Extracts</p>
+  <p  class="dinners-menu-item">Espresso Gelato | Mocha Brittle</p>
+  <p  class="dinners-menu-item">Polenta Shortcakes | Raisins | Pinenuts | Figs | Lemon-Mascarpone Crema</p>
 
 </section>
