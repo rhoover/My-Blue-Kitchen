@@ -15,7 +15,7 @@
     <p class="posts-card-date"><?php the_time('F j, Y'); ?></p>
   </div>
   <?php if (get_field('grabber_quote') ): ?>
-    <h3 class="posts-card-excerpt">"<?php echo get_field('grabber_quote'); ?>"</h3>
+    <h3 class="posts-card-excerpt"><?php echo get_field('grabber_quote'); ?></h3>
   <?php endif; ?>
 
 </a>
