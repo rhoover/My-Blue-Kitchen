@@ -264,6 +264,17 @@ add_action('wp_head', function() {
 });
 
 /**
+ * Add MBK Logo To Login Page
+ */
+if( !function_exists( 'custom_login_logo' ) ) {
+	function custom_login_logo() {
+		$template_url = get_bloginfo('template_directory');
+			echo '<style>h1 a { background-image: url(" '.$template_url.'/images/flame-logo-large.png ") !important; }</style>';
+	}
+	add_action( 'login_head', 'custom_login_logo' );
+};
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
