@@ -68,18 +68,7 @@
     padding: 1rem;
     border: 1px solid setcolor(sea-blue, base);
     border-radius: 0.25rem;
-    //courtesy: shadows.brumm.af
     @extend %big-box-shadow;
-    // box-shadow:
-      // 0.4px 0.4px 0.6px rgba(0, 0, 0, 0.027),
-      // 0.8px 0.8px 1.4px rgba(0, 0, 0, 0.039),
-      // 1.4px 1.4px 2.4px rgba(0, 0, 0, 0.048),
-      // 2.2px 2.2px 3.7px rgba(0, 0, 0, 0.056),
-      // 3.2px 3.2px 5.5px rgba(0, 0, 0, 0.064),
-      // 4.7px 4.7px 8px rgba(0, 0, 0, 0.072),
-      // 7px 7px 12.1px rgba(0, 0, 0, 0.081),
-      // 11.2px 11.2px 19.2px rgba(0, 0, 0, 0.093),
-      // 21px 21px 36px rgba(0, 0, 0, 0.12);
     text-decoration: none;
     color: setcolor(black, base);
     &-meta {
@@ -88,6 +77,7 @@
     }
     &-title {
       font-size: ms(3);
+      font-weight: 700;
     }
     &-category {
       font-size: ms(-1);
@@ -96,6 +86,9 @@
     &-date {
       font-size: ms(-2);
       color: setcolor(black, light55);
+    }
+    &-excerpt {
+      font-weight: 400;
     }
   }
   &:last-of-type {
