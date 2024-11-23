@@ -17,31 +17,32 @@
     justify-content: space-around;
     cursor: pointer;
   }
-  &-button-link {
-    position: relative;
-    text-decoration: none;
-    text-align: center;
-    padding: 1rem 0px;
-    margin-bottom: 1.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid setcolor(sea-blue, base);
-    @extend %big-box-shadow;
-    @extend %expando-hover;
-    // &:hover {
-    //   background-color: setcolor(sea-blue, light75);
-    // }
-  }
   &-button {
+    position: relative;
     border: none;
     background: transparent;
-    font-size: ms(2);
+    font-size: ms(1);
+    border: 1px solid setcolor(sea-blue, base);
+    padding: 16px 16px;
+    margin: 1.5rem 0.5rem;
+    border-radius: 0.5rem;
+    @extend %big-box-shadow;
+    @extend %expando-hover;
     cursor: pointer;
+    &-active {
+      background: rgba(setcolor(sea-blue, base), 0.25);
+    }
   }
-  &-menu {
+  &-menus {
+    min-height: 901px;
     padding: 16px;
     border: 1px solid setcolor(black, base);
     border-radius: 16px;
-    margin-bottom: 32px;
+  }
+  &-menu {
+    display: none;
+    opacity: 0;
+    animation: fadeIn 2s;
     &-header {
       font-size: ms(3);
       padding-top: 32px;
@@ -55,5 +56,14 @@
       margin: 32px;
       line-height: ms(3);
     }
+    &-active {
+      display: block;
+      opacity: 1;
+    }
   }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

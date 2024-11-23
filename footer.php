@@ -135,15 +135,25 @@
 	};
 ?>
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-80T3NNQBVK"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80T3NNQBVK"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-		gtag('config', 'G-80T3NNQBVK');
-	</script>
+	gtag('config', 'G-80T3NNQBVK');
+</script>
+
+<?php 
+	if (is_page('pop-ups')) {
+		echo '<!-- select a menu to see -->';
+		echo '<script>';
+		$menubutton =  get_template_directory() . '/js/min/pop-ups-min.js';
+		echo file_get_contents($menubutton);
+		echo '</script>';
+	};
+?>
 
 
 </body>
