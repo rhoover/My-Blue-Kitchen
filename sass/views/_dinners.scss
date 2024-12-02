@@ -12,10 +12,12 @@
     color: setcolor(black, light25);
   }
   &-buttons {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    column-gap: 16px;
+    row-gap: 32px;
+    margin-bottom: 32px;
     align-items: center;
-    justify-content: space-around;
     cursor: pointer;
   }
   &-button {
@@ -25,8 +27,7 @@
     font-size: ms(1);
     border: 1px solid setcolor(sea-blue, base);
     padding: 16px 16px;
-    margin: 1.5rem 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     @extend %big-box-shadow;
     @extend %expando-hover;
     cursor: pointer;
