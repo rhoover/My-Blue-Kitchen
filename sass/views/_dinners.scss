@@ -3,8 +3,9 @@
     font-size: ms(3);
     font-weight: 700;
     border-bottom: 2px solid setcolor(blue, light45);
-    padding-bottom: 1rem;
-    margin-bottom: 1.5rem;
+    border-top: 2px solid setcolor(blue, light45);
+    padding: 16px 0px 16px 0px;
+    margin: 16px 0px 16px 0px;
   }
   &-date {
     font-size: ms(-1);
