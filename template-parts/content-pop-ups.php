@@ -16,6 +16,8 @@
   
   <button class="dinners-button" data-button="spain">Spain</button>
 
+  <button class="dinners-button" data-button="spaintwo">Spain Two</button>
+
   <button class="dinners-button" data-button="neworleans">New Orleans</button>
 
   <button class="dinners-button" data-button="southamerica">South America</button>
@@ -254,6 +256,38 @@
     <p  class="dinners-menu-item">Apple Tart | Crumble | Fromage Blanc Sorbet</p>
     <p  class="dinners-menu-item">Spiced Orange Ice Cream</p>
     <p  class="dinners-menu-item">Dark Chocolate-Ginger Mousse</p>
+
+  </div>
+  <div class="dinners-menu" data-flavor="spaintwo">
+
+    <h2 class="dinners-header">Spain</h2>
+
+    <p class="dinners-date">December 7, 2024</p>
+
+    <h2 class="dinners-menu-header">APPETIZERS</h2>
+
+    <hr class="dinners-menu-line"/>
+
+    <p  class="dinners-menu-item">Fava Bean Salad | Bitter Greens | Fresh Mint | Tarragon Vinaigrette</p>
+    <p  class="dinners-menu-item">Pork-Stuffed Whole Calamari | Crispy Pork Belly | Dry Sherry Reduction</p>
+    <p  class="dinners-menu-item">Seafood Zarzuela Soup | Cod | Shrimp | Swordfish | Tomatoes | Yukon Potatoes</p>
+
+    <h2 class="dinners-menu-header">ENTREES</h2>
+
+    <hr class="dinners-menu-line"/>
+
+    <p  class="dinners-menu-item">Catalan Beef Stew | Bacon | Sausage | New Potatoes </p>
+    <p  class="dinners-menu-item">Lemon-Garlic Chicken Breast  | Crispy Scallions | Saffron Valencia Rice</p>
+    <p  class="dinners-menu-item">Homemade Fennel Sausage | Scallops | Chorizo | White Beans | Cherry Tomatoes | Broccoli Rabe</p>
+    <p  class="dinners-menu-item">Escalivada Vegetable Ragout | Red Potatoes | Romesco Sauce</p>
+
+    <h2 class="dinners-menu-header">DESSERTS</h2>
+
+    <hr class="dinners-menu-line"/>
+
+    <p  class="dinners-menu-item">Majorcan Cheesecake | Ricotta | Lemon | Golden Raisins</p>
+    <p  class="dinners-menu-item">Fig Ice Cream | Honey-Wine Reduction | Fresh Mint</p>
+    <p  class="dinners-menu-item">Strawberry Mousse | Candied Walnuts</p>
 
   </div>
 </section>
