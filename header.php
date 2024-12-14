@@ -239,10 +239,10 @@
 			width="2048"
 			height="567"
 			alt="Badass Burning Flames"
-			srcset="<?php echo esc_html( get_template_directory_uri() . '/images/flames-large.jpg' ); ?> 2049w,
-							<?php echo esc_html( get_template_directory_uri() . '/images/flames-medium.jpg' ); ?> 1025w,
-							<?php echo esc_html( get_template_directory_uri() . '/images/flames-small.jpg' ); ?> 641w"
-			src="<?php echo esc_html( get_template_directory_uri() . '/images/flames-large.jpg' ); ?>"
+			srcset="<?php echo esc_html( get_template_directory_uri() . '/images/flames-new-large.webp' ); ?> 2049w,
+							<?php echo esc_html( get_template_directory_uri() . '/images/flames-new-medium.webp' ); ?> 1025w,
+							<?php echo esc_html( get_template_directory_uri() . '/images/flames-new-small.webp' ); ?> 641w"
+			src="<?php echo esc_html( get_template_directory_uri() . '/images/flames-new-large.webp' ); ?>"
 		>
 	</section>
 

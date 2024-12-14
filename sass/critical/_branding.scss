@@ -1,7 +1,7 @@
 .branding {
   display: grid;
   position: fixed;
-  top: 4rem;
+  // top: 4rem;
   width: 100%;
   &-image {
     height: auto;
@@ -15,7 +15,7 @@
     align-self: center;
     text-align: center;
     margin-bottom: 0px;
-    padding: 0.25rem 0px;
+    padding: 2px 0px;
     background-color: rgba(setcolor(white, base), 0.05);
     backdrop-filter: blur(20px);
     border-top: 1px solid setcolor(sea-green, light25);
@@ -25,7 +25,7 @@
     text-shadow: 0 0 1px rgba(0,0,0,0.3), 0 0 1px rgba(0,0,0,0.3), 0 0 1px rgba(0,0,0,0.3), 0 0 1px rgba(0,0,0,0.3);
     color: setcolor(white, base);
     @media (min-width: 40em) {
-      padding: 2rem 0px;
+      padding: 4px 0px;
       font-size: ms(4);
     }
   }
