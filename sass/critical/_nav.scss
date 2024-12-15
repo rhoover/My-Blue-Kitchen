@@ -34,6 +34,7 @@
       color: setcolor(black, light25);
       text-decoration: none;
       border-bottom: 1px solid setcolor(sea-blue, base);
+      @extend %animate-helper;
       &:hover {
         font-weight: 700;
       }
@@ -55,7 +56,8 @@
         padding: 0.25rem 1rem;
         border-bottom: none;
         border-right: 1px solid setcolor(blue, base);
-        color: setcolor(blue, dark25);
+        // color: setcolor(blue, dark25);
+        color: setcolor(white, base);
       }
       &:nth-of-type(2) {
         border-top: 1px solid setcolor(sea-blue, base);

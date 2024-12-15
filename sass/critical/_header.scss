@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-around;
   // background: setcolor(white, light65);
-  background-color: rgba(setcolor(black), 0.15);
+  background-color: rgba(setcolor(black, base), 0.15);
   backdrop-filter: blur(6px);
   // border-bottom: 1px solid setcolor(sea-blue, base);
   box-shadow: 
@@ -91,9 +91,14 @@
     top: 4rem;
     width: 3rem;
     height: 2.5rem;
-    background: setcolor(white, light65);
-    border-bottom: 1px solid setcolor(sea-blue, base);
-    border-left: 1px solid setcolor(sea-blue, base);
+    // background: setcolor(white, light65);
+    // border-bottom: 1px solid setcolor(sea-blue, base);
+    // border-left: 1px solid setcolor(sea-blue, base);
+    background-color: rgba(setcolor(sea-blue, base),0.75);
+    border-radius: 30% 0% 0% 30%;
+    border-top: 1px solid setcolor(sea-blue, dark25);
+    border-bottom: 1px solid setcolor(sea-blue, dark25);
+    border-left: 1px solid setcolor(sea-blue, dark25);
     cursor: pointer;
     z-index: 600;
     // @media (min-width: 40em) {
@@ -105,9 +110,11 @@
       width: 1.5rem;
       fill: none;
       stroke-miterlimit: 10;
-      stroke-width: 1.5rem;
+      // stroke-width: 1.5rem;
+      stroke-width: 3rem;
       stroke-linecap: round;
-      stroke: setcolor(sea-blue, dark25);
+      // stroke: setcolor(sea-blue, dark25);
+      stroke: setcolor(white, base);
       &-close {
         stroke-width: 5rem;
         stroke: setcolor(red, base);

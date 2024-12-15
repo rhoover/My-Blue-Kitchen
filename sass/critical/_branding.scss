@@ -12,9 +12,11 @@
   &-lede {
     position: absolute;
     width: 100%;
-    align-self: center;
+    // align-self: center;
+    align-self: end;
     text-align: center;
-    margin-bottom: 0px;
+    // margin-bottom: 0px;
+    margin-bottom: 40px;
     padding: 2px 0px;
     background-color: rgba(setcolor(white, base), 0.05);
     backdrop-filter: blur(20px);
@@ -25,8 +27,14 @@
     text-shadow: 0 0 1px rgba(0,0,0,0.3), 0 0 1px rgba(0,0,0,0.3), 0 0 1px rgba(0,0,0,0.3), 0 0 1px rgba(0,0,0,0.3);
     color: setcolor(white, base);
     @media (min-width: 40em) {
-      padding: 4px 0px;
+      // padding: 4px 0px;
+      margin-bottom: 90px;
       font-size: ms(4);
+    }
+    @media (min-width: 74em) {
+      margin-bottom: 350px;
+      padding: 24px 0px 24px 0px;
+      font-size: ms(6);
     }
   }
 }
