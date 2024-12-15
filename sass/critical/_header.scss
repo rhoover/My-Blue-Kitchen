@@ -5,8 +5,10 @@
   height: 4rem;
   display: flex;
   justify-content: space-around;
-  background: setcolor(white, light65);
-  border-bottom: 1px solid setcolor(sea-blue, base);
+  // background: setcolor(white, light65);
+  background-color: rgba(setcolor(black), 0.15);
+  backdrop-filter: blur(6px);
+  // border-bottom: 1px solid setcolor(sea-blue, base);
   box-shadow: 
     0px 0.9px 0.7px rgba(0, 0, 0, 0.034),
     0px 2.1px 1.8px rgba(0, 0, 0, 0.048),
@@ -25,9 +27,11 @@
     cursor: pointer;
     & svg {
       align-self: end;
-      fill: setcolor(sea-blue, base);
+      // fill: setcolor(sea-blue, base);
+      fill: setcolor(white, base);
       width: 2em;
       height: 2em;
+      @extend %animate-helper;
     }
     @media (min-width: 90em) {
       display: none;
@@ -36,6 +40,8 @@
   &-back-text {
     margin-bottom: 0px;
     font-size:  ms(0);
+    color: setcolor(white, base);
+    @extend %animate-helper;
   }
   &-center {
     display: grid;
@@ -56,11 +62,13 @@
       grid-column: 2 / 3;
       align-self: center;
       text-decoration: none;
-      color: setcolor(sea-blue, dark25);
+      // color: setcolor(sea-blue, dark25);
+      color: setcolor(white, base);
       font-size: ms(2);
+      @extend %animate-helper;
       @media (min-width: 90em) {
-      font-size: ms(5);
-      justify-self: left;
+        font-size: ms(5);
+        justify-self: left;
       }
     }
   }
@@ -88,10 +96,10 @@
     border-left: 1px solid setcolor(sea-blue, base);
     cursor: pointer;
     z-index: 600;
-    @media (min-width: 40em) {
-      width: 5rem;
-      height: 4rem;
-    }
+    // @media (min-width: 40em) {
+    //   width: 5rem;
+    //   height: 4rem;
+    // }
     &-svg {
       height: 1.5rem;
       width: 1.5rem;
@@ -112,12 +120,13 @@
     left: 0px;
     transform: translateY(-4rem);
     width: calc(100vw - 3rem);
-    height: 4rem;
+    // height: 4rem;
+    height: 2.5rem;
     border-bottom: 1px solid setcolor(sea-blue, base);
     z-index: 400;
-    @media (min-width: 40em) {
-      width: calc(100vw - 5rem);
-    }
+    // @media (min-width: 40em) {
+    //   width: calc(100vw - 5rem);
+    // }
     @media (min-width: 74em) {
       width: calc(100vw - 6rem);
       width: 25%;
@@ -159,6 +168,7 @@
 }
 .menu-button-text {
   @extend %animate-helper;
+  color: setcolor(white, base);
   &-red {
     color: setcolor(red, base);
     font-weight: 700;
@@ -172,7 +182,8 @@
 
 .icon {
   align-self: center;
-  fill: setcolor(sea-blue, base);
+  // fill: setcolor(sea-blue, base);
+  fill: setcolor(white, base);
 	height: 1em;
 	width: 1em;
 }

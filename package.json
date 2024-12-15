@@ -28,7 +28,8 @@
     "events": "terser js/events-map.js -c -o js/min/events-map-min.js",
     "resydate": "terser js/resy-date.js -c -o js/min/resy-date-min.js",
     "selectAmount": "terser js/select-amount.js -c -o js/min/select-amount-min.js",
-    "popupsmin": "terser js/pop-ups.js -c -o js/min/pop-ups-min.js"
+    "popupsmin": "terser js/pop-ups.js -c -o js/min/pop-ups-min.js",
+    "headerChange": "terser js/header-change.js -c -o js/min/header-change-min.js"
   },
   "author": "",
   "license": "ISC",

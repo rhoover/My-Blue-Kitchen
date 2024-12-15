@@ -68,6 +68,14 @@
 	?>
 </script>
 
+<!-- header behavior -->
+<script>
+	<?php
+		$headertrigger =  get_template_directory() . '/js/min/header-change-min.js';
+		echo file_get_contents($headertrigger);
+	?>
+</script>
+
 <?php
 	if (is_single()) {
 		echo "<!-- print button behavior -->";
