@@ -11,9 +11,9 @@
       menuButtonWrap.classList.toggle('opened');
       menuText.classList.toggle('menu-button-text-red');
 
-      if (menuText.innerHTML === 'Menu') {
+      if (menuText.innerHTML === 'Site') {
         menuText.innerHTML = 'Close'
       } else {
-        menuText.innerHTML = 'Menu'}
+        menuText.innerHTML = 'Site'}
       }
     }());

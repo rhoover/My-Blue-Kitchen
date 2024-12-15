@@ -42,7 +42,7 @@ get_header(); ?>
 <p class="home-list-tagline">Battle tested techniques, ingredients and recipes to get you cooking and serving with confidence.</p>
 
 <section class="cat-list-oils">
-    <p>Culinary Oils Uses and Recipes</p>
+    <p>Culinary Oils: Uses and Recipes</p>
     <?php   $include_slugs = array( 'anchooil', 'basiloil', 'lemonoil', 'tomatooil' );
     $include_ids = array();
     foreach( $include_slugs as $slug ) {
