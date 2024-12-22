@@ -16,6 +16,8 @@
 	<p class="home-share-text">share</p>
 </div>
 
+<div class="list-scroller"><p>top</p></div>
+
 </main>
 
 <footer id="footer" class="footer <?php if (is_404()) {echo "footer-fourohfour";}; ?>">
@@ -39,7 +41,7 @@
 		Share With Your Friends
 	</p>
 
-	<div class="list-scroller"><p>top</p></div>
+	<!-- <div class="list-scroller"><p>top</p></div> -->
 </footer>
 
 <?php wp_footer(); ?>
