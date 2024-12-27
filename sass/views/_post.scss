@@ -87,6 +87,14 @@
       justify-items: center;
     }
   }
+  &-article {
+    & > p {
+      margin-bottom: 1lh;
+    }
+    & > ol {
+      list-style-position: inside;
+    }
+  }
 }
 
 .cat-list {
