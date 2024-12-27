@@ -26,6 +26,8 @@
 		}?>
 	</title>
 
+	<link rel="preload" href="<?php echo esc_url( get_template_directory_uri() . '/fonts/quicksand-regular.woff2' ) ?>" as="font" type="font/woff2" crossorigin="anonymous">
+
 	<?php
 		echo "<style id=\"critical\">";
 		$base_dir = trailingslashit(get_template_directory());
