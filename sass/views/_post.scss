@@ -12,81 +12,81 @@
     border-bottom: 1px solid setcolor(blue, base);
     font-size: ms(3);
   }
-    &-strike {
-      text-decoration:  line-through;
-    }
-    &-uses {
-      list-style: inside;
+  &-strike {
+    text-decoration:  line-through;
+  }
+  &-uses {
+    list-style: inside;
+    margin-bottom: 1rem;
+  }
+  &-button {
+    display: inline-block;
+    position: relative;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: ms(1);
+    text-decoration: none;
+    color: setcolor(black, base);
+    $color: setcolor(sea-blue, light95);
+    color: invert($color);
+    background-color: rgba(setcolor(sea-blue, light95),0.5);
+    border-radius: 0.25rem;
+    border: 1px solid setcolor(sea-blue, base);
+    @extend %expando-hover;
+  }
+  &-recipe {
+    &-title {
+      padding: 1rem 0px;
       margin-bottom: 1rem;
+      font-size: ms(3);
+      font-weight: 700;
     }
-    &-button {
-      display: inline-block;
-      position: relative;
-      padding: 1rem 1rem;
-      text-align: center;
-      font-size: ms(1);
-      text-decoration: none;
-      color: setcolor(black, base);
-      $color: setcolor(sea-blue, light95);
-      color: invert($color);
-      background-color: rgba(setcolor(sea-blue, light95),0.5);
-      border-radius: 0.25rem;
-      border: 1px solid setcolor(sea-blue, base);
-      @extend %expando-hover;
+    &-desc {
+      margin: 3rem 0px 1rem 0px;
+      padding: 0.5rem 0px 0.5rem 0px;
+      border-top: 1px solid setcolor(black, light45);
+      border-bottom: 1px solid setcolor(black, light45);
+      font-size: ms(3);
+      background-color: rgba(setcolor(sea-blue, base),0.1);
     }
-    &-recipe {
-      &-title {
-        padding: 1rem 0px;
-        margin-bottom: 1rem;
-        font-size: ms(3);
-        font-weight: 700;
-      }
-      &-desc {
-        margin: 3rem 0px 1rem 0px;
-        padding: 0.5rem 0px 0.5rem 0px;
-        border-top: 1px solid setcolor(black, light45);
-        border-bottom: 1px solid setcolor(black, light45);
-        font-size: ms(3);
-        background-color: rgba(setcolor(sea-blue, base),0.1);
-      }
-      &-steps {
-        & ol {
-          list-style: none;
-          counter-reset: awesome-counter;
-          & li {
-            list-style-position: inside;
-            text-indent: -1.5em;
-            padding-left: 1.5em;
-            counter-increment: awesome-counter;
-            margin-bottom: 1rem;
-            &::before {
-              content: counter(awesome-counter) ". ";
-            }
+    &-steps {
+      & ol {
+        list-style: none;
+        counter-reset: awesome-counter;
+        & li {
+          list-style-position: inside;
+          text-indent: -1.5em;
+          padding-left: 1.5em;
+          counter-increment: awesome-counter;
+          margin-bottom: 1rem;
+          &::before {
+            content: counter(awesome-counter) ". ";
           }
         }
       }
-      &-stuff {
-        & > p {
-          line-height: ms(4);
-          display: list-item;
-          list-style-type: disc;
-          margin-left: 1.5rem;
-        }
-      }
-      &-notes {
-        & p {
-          margin-bottom: 1rem;
-        }
-      }
+    }
+    &-stuff {
       & > p {
-        line-height: ms(3);
-      }
-      &-buttons {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        justify-items: center;
+        line-height: ms(4);
+        display: list-item;
+        list-style-type: disc;
+        margin-left: 1.5rem;
       }
     }
+    &-notes {
+      & p {
+        margin-bottom: 1rem;
+      }
+    }
+    & > p {
+      line-height: ms(3);
+    }
+    &-buttons {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      justify-items: center;
+    }
+  }
 }
 
 .cat-list {
