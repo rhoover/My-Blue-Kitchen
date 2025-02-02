@@ -4,13 +4,14 @@
   margin-top: 0px;
   margin-bottom: 0px;
   box-shadow: none;
+  background-color: rgba(250,250,250,0.0);
   &-center {
     display: block;
-    transform: translateX(-100px);
-  }
-  &-title {
-    font-family: 'Quicksand';
-    font-size: ms(3);
-    color: setcolor(sea-blue, dark45);
+    transform: translateX(-150px);
+    &-title {
+      font-family: 'Quicksand';
+      font-size: ms(2);
+      color: setcolor(sea-blue, dark45);
+    }
   }
 }

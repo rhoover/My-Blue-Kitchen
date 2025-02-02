@@ -21,7 +21,7 @@
 </main>
 
 <footer id="footer" class="footer <?php if (is_404()) {echo "footer-fourohfour";}; ?>">
-	<h3 class="footer-header">My Blue Kitchen is fueled with passion <span class="footer-header-joke">and occasionally Single Barrel Bourbon</span></h3>
+	<h3 class="footer-header">My Blue Kitchen is fueled with passion <br /><span class="footer-header-joke">and occasionally Single Barrel Bourbon</span></h3>
 	<p class="footer-text">And powered by <a class="footer-text-anchor" href="https://moosedog.io" target="_blank" rel="noopener">MooseDog Studios</a>, known across Vermont as Robin Hoover
 	</p>
 	<a class="footer-bookface" href="https://www.facebook.com/mybluekitchen" target="_blank" rel="noreferrer noopener">

@@ -26,6 +26,11 @@
 }
 #footer {display: none;}
 
+.content img {
+  display: none;
+  visibility: none;
+}
+
 .post-article p img {
   display: none;
   visibility: none;
@@ -72,6 +77,16 @@
   visibility: hidden;
 }
 .cat-list-oils {
+  display: none;
+  visibility: hidden;
+}
+
+.home-share {
+  display: none;
+  visibility: hidden;
+}
+
+.list-scroller {
   display: none;
   visibility: hidden;
 }
