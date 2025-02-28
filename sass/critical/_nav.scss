@@ -4,14 +4,16 @@
     top: 1rem;
     width: 45%;
     height: calc(100vh - 4rem);
-    transform: translateX(-100%);
+    // transform: translateX(-100%);
+    transform: translateX(250%);
     text-align: center;
     background: setcolor(white, light65);
     background-image: linear-gradient(setcolor(white, light65), setcolor(white, base));
     z-index: 450;
     @extend %animate-helper;
     &-open {
-      transform: translateX(0%) translateY(3rem);
+      // transform: translateX(0%) translateY(3rem);
+      transform: translateX(125%) translateY(3rem);
       box-shadow: 10px 3px 4px 0px rgba(0,0,0,0.1);
       border-right: 1px solid setcolor(sea-blue, base);
     }
