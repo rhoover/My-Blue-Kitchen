@@ -2,33 +2,22 @@
   &-main {
     position: fixed;
     top: 1rem;
+    right: 0;
     width: 45%;
     height: calc(100vh - 4rem);
-    // transform: translateX(-100%);
-    transform: translateX(250%);
+    transform: translateX(100%);
     text-align: center;
     background: setcolor(white, light65);
     background-image: linear-gradient(setcolor(white, light65), setcolor(white, base));
     z-index: 450;
     @extend %animate-helper;
     &-open {
-      // transform: translateX(0%) translateY(3rem);
-      transform: translateX(125%) translateY(3rem);
+      transform: translateX(0) translateY(3rem);
       box-shadow: 10px 3px 4px 0px rgba(0,0,0,0.1);
-      border-right: 1px solid setcolor(sea-blue, base);
+      border-left: 1px solid setcolor(sea-blue, base);
     }
     @include breakpoint($medium) {
       width: 20%;
-    }
-    @include breakpoint($large) {
-      top: 1.25rem;
-      right: 0;
-      width: auto;
-      height: auto;
-      padding-right: 3rem;
-      transform: translateX(0);
-      background: transparent;
-      z-index: 500;
     }
     & > a {
       display: block;
@@ -38,7 +27,8 @@
       border-bottom: 1px solid setcolor(sea-blue, base);
       @extend %animate-helper;
       &:hover {
-        font-weight: 700;
+        // color: setcolor(sea-blue, base);
+        background-color: rgba(setcolor(sea-blue, base), 0.25);
       }
       &:first-of-type {
         padding: 8px;
@@ -48,29 +38,10 @@
         text-decoration: none;
         border: 1px solid setcolor(red, base);
         border-radius: 0.5rem;
-        @include breakpoint($large) {
-          display: none;
-          visibility: hidden;
-        }
-      }
-      @include breakpoint($large) {
-        display: inline-block;
-        padding: 0.25rem 1rem;
-        border-bottom: none;
-        border-right: 1px solid setcolor(blue, base);
-        // color: setcolor(blue, dark25);
-        color: setcolor(white, base);
+        cursor: pointer;
       }
       &:nth-of-type(2) {
         border-top: 1px solid setcolor(sea-blue, base);
-        @include breakpoint($large) {
-          border-top: none;
-        }
-      }
-      &:last-of-type {
-        @include breakpoint($large) {
-          border-right: none;
-        }
       }
     }
   }
