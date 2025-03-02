@@ -30,6 +30,8 @@
 
   <button class="dinners-button" data-button="france">France</button>
 
+  <button class="dinners-button" data-button="south">American South</button>
+
 </section>
 
 <section class="dinners-menus">
@@ -288,6 +290,39 @@
     <p  class="dinners-menu-item">Majorcan Cheesecake | Ricotta | Lemon | Golden Raisins</p>
     <p  class="dinners-menu-item">Fig Ice Cream | Honey-Wine Reduction | Fresh Mint</p>
     <p  class="dinners-menu-item">Strawberry Mousse | Candied Walnuts</p>
+
+  </div>
+  <div class="dinners-menu" data-flavor="south">
+
+    <h2 class="dinners-header">American South</h2>
+
+    <p class="dinners-date">February 8, 2025</p>
+
+    <h2 class="dinners-menu-header">APPETIZERS</h2>
+
+    <hr class="dinners-menu-line"/>
+
+    <p  class="dinners-menu-item">Shrimp Stuffed Mushrooms | Horseradish Aioli</p>
+    <p  class="dinners-menu-item">Down South Dips Plate | Pimento Cheese | Chicken Liver Mousse | Chow-Chow Relish</p>
+    <p  class="dinners-menu-item">Corn Fritters | Pear Relish</p>
+
+    <h2 class="dinners-menu-header">ENTREES</h2>
+
+    <hr class="dinners-menu-line"/>
+
+    <p  class="dinners-menu-item">Chicken n' Waffles | Spicy Honey-Butter Sauce | With Sides</p>
+    <p  class="dinners-menu-item">Open-Face Po'Boy Sandwich  | Oyster and Sausage | With Sides</p>
+    <p  class="dinners-menu-item">Smoked Pork Ribs | Alabama White BBQ Sauce | With Sides</p>
+    <p  class="dinners-menu-item">Stuffed Sweet Potato | Okra | Black Beans | Corn Coulis | With Sides</p>
+    <p  class="dinners-menu-item">Sides: Mac n' Cheese | Collard Greens | Grits | Red Beans n' Rice | Cole Slaw | Black Eyed Peas</p>
+
+    <h2 class="dinners-menu-header">DESSERTS</h2>
+
+    <hr class="dinners-menu-line"/>
+
+    <p  class="dinners-menu-item">Peach Sorbet | Grilled Pineapple</p>
+    <p  class="dinners-menu-item">Banana Pudding | Vanilla Wafers | Shaved Dark Chocolate</p>
+    <p  class="dinners-menu-item">Coffee Pots de Creme | Candied Pecans</p>
 
   </div>
 </section>
