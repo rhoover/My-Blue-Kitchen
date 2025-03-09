@@ -236,7 +236,7 @@
 
 	<section class="branding">
 		<p class="branding-lede"><?php echo get_bloginfo('description', 'display'); ?></p>
-		<img class="branding-image"
+		<img fetchpriority="high" class="branding-image"
 			sizes="641w, 1025w, 2049w"
 			width="2048"
 			height="567"
