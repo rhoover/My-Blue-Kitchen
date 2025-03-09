@@ -1,0 +1,1 @@
+function configureGoogleAnalytics(){if(document.getElementById("analytics")){function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-80T3NNQBVK")}}setTimeout(configureGoogleAnalytics,4e3);

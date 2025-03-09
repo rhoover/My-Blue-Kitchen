@@ -145,16 +145,6 @@
 	};
 ?>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-80T3NNQBVK"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-80T3NNQBVK');
-</script>
-
 <?php 
 	if (is_page('pop-ups')) {
 		echo '<!-- select a menu to see -->';
@@ -163,6 +153,22 @@
 		echo file_get_contents($menubutton);
 		echo '</script>';
 	};
+?>
+
+<?php 
+	echo '<!-- Google Analytics Link -->';
+	echo '<script>';
+	$googlescriptsource =  get_template_directory() . '/js/min/google-analytics-link-min.js';
+	echo file_get_contents($googlescriptsource);
+	echo '</script>';
+?>
+
+<?php
+	echo '<!-- Google Analytics Config -->';
+	echo '<script>';
+	$googlescriptconfig =  get_template_directory() . '/js/min/google-analytics-config-min.js';
+	echo file_get_contents($googlescriptconfig);
+	echo '</script>';
 ?>
 
 
