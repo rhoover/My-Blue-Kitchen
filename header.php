@@ -63,8 +63,8 @@
 
 	<meta name="description" <?php
 		$post_slug = get_post_field('post_name', get_the_ID());
-		if ($post_slug == "france") {
-			echo ' content="My Blue Kitchen Presents The Flavors of France, A Pop Up Dinner Event" ';
+		if ($post_slug == "america") {
+			echo ' content="My Blue Kitchen Presents The Flavors That Fuel America, A Pop Up Dinner Event" ';
 		} else {
 			echo ' content="My Blue Kitchen, Where Confidence Reluctance and Sass Come To A Boil" ';
 		};
