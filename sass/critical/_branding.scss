@@ -1,7 +1,6 @@
 .branding {
   display: grid;
   position: fixed;
-  // top: 4rem;
   width: 100%;
   &-image {
     height: auto;
@@ -12,10 +11,8 @@
   &-lede {
     position: absolute;
     width: 100%;
-    // align-self: center;
     align-self: end;
     text-align: center;
-    // margin-bottom: 0px;
     margin-bottom: 40px;
     padding: 2px 0px;
     background-color: rgba(setcolor(white, base), 0.05);
@@ -25,14 +22,14 @@
     font-size: ms(-1);
     font-weight: 700;
     text-shadow: 0 0 1px rgba(0,0,0,0.3), 0 0 1px rgba(0,0,0,0.3), 0 0 1px rgba(0,0,0,0.3), 0 0 1px rgba(0,0,0,0.3);
-    color: setcolor(white, base);
+    color: setcolor(black, light25);
     @media (min-width: 40em) {
-      // padding: 4px 0px;
-      margin-bottom: 90px;
+      margin-bottom: 0px;
+      align-self: center;
       font-size: ms(4);
+      color: setcolor(white, base);
     }
     @media (min-width: 74em) {
-      margin-bottom: 350px;
       padding: 24px 0px 24px 0px;
       font-size: ms(6);
     }
