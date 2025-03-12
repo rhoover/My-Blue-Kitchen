@@ -176,6 +176,17 @@
 	echo '</script>';
 ?>
 
+<?php 
+	// if (is_page_template('single.php')) {
+	if (is_singular('post')) {
+		echo '<!-- Wake Lock Screen -->';
+		echo '<script>';
+		$wakescreen =  get_template_directory() . '/js/min/wake-screen-min.js';
+		echo file_get_contents($wakescreen);
+		echo '</script>';
+	};
+?>
+
 
 </body>
 </html>

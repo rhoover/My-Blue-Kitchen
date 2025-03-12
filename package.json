@@ -24,6 +24,7 @@
     "searchmin": "terser js/search-reveal.js -c -o js/min/search-reveal-min.js",
     "navcheckmin": "terser js/navcheck.js -c -o js/min/navcheck-min.js",
     "navclosemin": "terser js/navclose.js -c -o js/min/navclose-min.js",
+    "wakemin": "terser js/wake-screen.js -c -o js/min/wake-screen-min.js",
     "sharefooter": "terser js/share-footer.js -c -o js/min/share-footer-min.js",
     "share": "terser js/share-everywhere.js -c -o js/min/share-everywhere-min.js",
     "events": "terser js/events-map.js -c -o js/min/events-map-min.js",
