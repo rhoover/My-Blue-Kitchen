@@ -10,7 +10,7 @@
       const requestWakeLock = async () => {
         let wakeState = null;
         wakeState = await navigator.wakeLock.request("screen");
-        alert('Your screen will now not go black while you are cooking this recipe!');
+        alert('Your screen will NOW STAY ON while you are cooking this recipe!');
       };
       requestWakeLock();
     });
