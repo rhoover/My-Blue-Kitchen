@@ -1,0 +1,41 @@
+.wake-screen-button {
+  display: none;
+  position: fixed;
+  // left: 0px;
+  left: 30%;
+  bottom: 0px;
+  // top: 50%;
+  // width: 60px;
+  width: 175px;
+  // height: 110px;
+  height: 50px;
+  background-color: rgba(setcolor(sea-blue, base),0.75);
+  // border-radius: 0% 30% 30% 0%;
+  border-radius: 30% 30% 0% 0%;
+  border-top: 1px solid setcolor(sea-blue, dark25);
+  border-right: 1px solid setcolor(sea-blue, dark25);
+  border-left: 1px solid setcolor(sea-blue, dark25);
+  // border-bottom: 1px solid setcolor(sea-blue, dark25);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+  cursor: pointer;
+  & svg {
+    display: block;
+    position: absolute;
+    top: 15px;
+    // left: 9px;
+    // width: 55%;
+    width: 25%;
+    height: 55%;
+    fill: setcolor(white, light25);
+  }
+  &-text {
+    color: setcolor(white, base);
+    position: absolute;
+    // top: 31px;
+    top: 20px;
+    // left: 4px;
+    right: 0;
+    padding-right: 5px;
+    font-size: 0.85rem;
+  }
+}
