@@ -275,6 +275,15 @@ if( !function_exists( 'custom_login_logo' ) ) {
 };
 
 /**
+* remove Akismet inline style
+*/
+add_action( 'wp_print_styles', function()
+{
+    // Remove previous inline style
+    wp_styles()->add_data( 'akismet-widget-style', 'after', '' );    
+
+} );
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
