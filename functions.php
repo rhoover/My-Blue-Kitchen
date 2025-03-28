@@ -283,6 +283,7 @@ add_action( 'wp_print_styles', function()
     wp_styles()->add_data( 'akismet-widget-style', 'after', '' );    
 
 } );
+
 /**
  * Implement the Custom Header feature.
  */
