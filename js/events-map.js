@@ -153,15 +153,15 @@ function initMap() {
       mapTarget.scrollIntoView({behavior: "smooth", block: "end"});
 
       switch (chosenButtonID) {
-        case "waterbury":
+        case "essex":
           google.maps.event.trigger(eventMarkers[0],'click');
         break;
-        case "montpelier-summer":
+        case "montpelier":
           google.maps.event.trigger(eventMarkers[1],'click');
         break;
-        case "parkstreet":
-          google.maps.event.trigger(eventMarkers[2],'click');
-        break;
+        // case "parkstreet":
+        //   google.maps.event.trigger(eventMarkers[2],'click');
+        // break;
         case "taste":
           google.maps.event.trigger(eventMarkers[3],'click');
         break;

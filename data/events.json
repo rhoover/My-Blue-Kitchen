@@ -30,5 +30,13 @@
     "latitude": 44.52897060211079,
     "longitude": -72.7797469509952,
     "location": "Spruce Peak - Stowe Mountain Resort"
+  },
+  {
+    "event": "essex",
+    "name": "Essex Farmers Market",
+    "town": "Essex Junction",
+    "latitude": 44.50759319269218,
+    "longitude": -73.0544672591903,
+    "location": "Sandhill Park, Essex Junction"
   }
 ]
