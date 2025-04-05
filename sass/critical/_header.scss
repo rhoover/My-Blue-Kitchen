@@ -20,6 +20,10 @@
   }
   &-backbutton {
     @extend %header-buttons;
+    display: none;
+    &-active {
+      display: grid;
+    }
     & svg {
       align-self: end;
       fill: setcolor(white, base);

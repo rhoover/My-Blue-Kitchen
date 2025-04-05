@@ -1,1 +1,1 @@
-!function(){"use strict";document.querySelector(".header-backbutton").onclick=function(){history.back()}}();
+!function(){"use strict";var backButton=document.querySelector(".header-backbutton");""!=document.referrer||2!=history.length?1!=history.length?(console.log("else:",document.referrer,history.length),backButton.classList.add("header-backbutton-active"),backButton.onclick=function(){history.go(-1)}):console.log("second if:",document.referrer,history.length):console.log("first if:",document.referrer,history.length)}();
