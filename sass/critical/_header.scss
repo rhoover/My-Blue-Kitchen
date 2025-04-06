@@ -3,8 +3,10 @@
   left: 0;
   right: 0;
   height: 4rem;
-  display: flex;
-  justify-content: space-around;
+  // display: flex;
+  // justify-content: space-around;
+  display: grid;
+  grid-template-columns: .25fr 1fr .25fr;
   background-color: rgba(setcolor(black, base), 0.15);
   backdrop-filter: blur(6px);
   box-shadow: 
@@ -19,6 +21,7 @@
     justify-content: space-around;
   }
   &-backbutton {
+    grid-column: 1 / 2;
     @extend %header-buttons;
     display: none;
     &-active {
@@ -42,6 +45,8 @@
     @extend %animate-helper;
   }
   &-center {
+    grid-column: 2 / 3;
+    width: 100%;
     display: grid;
     @media (min-width: 90em) {
       padding-left: 2rem;
@@ -70,6 +75,7 @@
     }
   }
   &-menu {
+    grid-column: 3 / 4;
     @extend %header-buttons;
   }
   &-magnify {
