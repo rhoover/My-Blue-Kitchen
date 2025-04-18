@@ -176,8 +176,7 @@
 	echo '</script>';
 ?>
 
-<?php 
-	// if (is_page_template('single.php')) {
+<?php
 	if (is_singular('post')) {
 		echo '<!-- Wake Lock Screen -->';
 		echo '<script>';
