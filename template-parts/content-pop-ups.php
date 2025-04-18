@@ -32,6 +32,8 @@
 
   <button class="dinners-button" data-button="south">American South</button>
 
+  <button class="dinners-button" data-button="america">American Cuisine</button>
+
 </section>
 
 <section class="dinners-menus">
@@ -323,6 +325,40 @@
     <p  class="dinners-menu-item">Peach Sorbet | Grilled Pineapple</p>
     <p  class="dinners-menu-item">Banana Pudding | Vanilla Wafers | Shaved Dark Chocolate</p>
     <p  class="dinners-menu-item">Coffee Pots de Creme | Candied Pecans</p>
+
+  </div>
+  <div class="dinners-menu" data-flavor="america">
+
+    <h2 class="dinners-header">I Hear America Cooking</h2>
+
+    <p class="dinners-date">February 8, 2025</p>
+
+    <h2 class="dinners-menu-header">APPETIZERS</h2>
+
+    <hr class="dinners-menu-line"/>
+
+    <p  class="dinners-menu-item">Charleston Shrimp | Toast Points | Ramp Aioli | Chives</p>
+    <p  class="dinners-menu-item">Senate Bean Soup | Gluten Free Sourdough Bread</p>
+    <p  class="dinners-menu-item">Parsnip Fritters | Parmesan | Green Onion | Carrot Coulis</p>
+
+    <h2 class="dinners-menu-header">ENTREES</h2>
+
+    <hr class="dinners-menu-line"/>
+
+    <p  class="dinners-menu-item">House Smoked Salmon | Spinach-Nori Salad | Champagne Vinaigrette | With Sides</p>
+    <p  class="dinners-menu-item">Corned Beef and Cabbage | Carrots, Gold Potatoes | Creamy Dijon Mustard</p>
+    <p  class="dinners-menu-item">Meatloaf | Homemade Catsup | With Sides</p>
+    <p  class="dinners-menu-item">San Antonio Rib-Eye Chili | Cilantro Sour Cream | Gluten Free Sourdough Bread | With Sides</p>
+    <p  class="dinners-menu-item">VT Zucchini and Potatoe Casserole | Creamy Sweet Onion Coulis | With Sides</p>
+    <p  class="dinners-menu-item">Sides: Pueblo Cauliflower | 3 Bean Salad | Potato Salad | Succotash || Cucumber Salad | Hto Slaw</p>
+
+    <h2 class="dinners-menu-header">DESSERTS</h2>
+
+    <hr class="dinners-menu-line"/>
+
+    <p  class="dinners-menu-item">Plum Pudding Ice Cream | Raisins | Candied Orange | Brandy | Spices</p>
+    <p  class="dinners-menu-item">Ozark Pudding | Vanilla | Apples | Toasted Walnuts</p>
+    <p  class="dinners-menu-item">Maple Bourbon Cake | Icing | Candied Pecans</p>
 
   </div>
 </section>
