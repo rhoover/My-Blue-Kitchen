@@ -5,7 +5,7 @@
   'use strict';
 
   document.addEventListener('DOMContentLoaded', () => {
-    /** init gtm after 3500 seconds - this could be adjusted */
+    /** init gtm after 3500 milliseconds - this could be adjusted */
     setTimeout(initGTM, 3500);
   });
 
