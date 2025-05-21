@@ -1,10 +1,11 @@
 (() => {
   'use strict';
 
+    // initialize DOM selections
     let wakeButton = document.querySelector('.wake-screen-button');
     let wakeButtonText = document.querySelector('.wake-screen-button-text');
 
-    // test support
+    // initialize support
     let isSupported = false;
 
     // change button and status if wakelock becomes aquired or is released
@@ -20,6 +21,7 @@
     };
 
     if (isSupported) {
+      
       // create a reference for the wake lock
       let wakeLock = null;
 
