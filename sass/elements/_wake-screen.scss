@@ -12,6 +12,9 @@
   border-left: 1px solid setcolor(sea-blue, dark25);
   box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
   cursor: pointer;
+  &-active {
+    display: block;
+  }
   & svg {
     display: block;
     position: absolute;
