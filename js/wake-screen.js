@@ -12,7 +12,6 @@
       const acquired = status === 'acquired' ? true : false;
       wakeButton.dataset.status = acquired ? 'on' : 'off';
       wakeButtonText.textContent = `${acquired ? 'Screen Is Awake!' : 'Keep Screen Awake'}`;
-      // statusElem.textContent = `${acquired ? 'Screen Is Awake!' : 'Keep Screen Awake'}`;
     };
 
     if ('wakeLock in navigator') {
