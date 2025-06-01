@@ -63,8 +63,8 @@
 
 	<meta name="description" <?php
 		$post_slug = get_post_field('post_name', get_the_ID());
-		if ($post_slug == "america") {
-			echo ' content="My Blue Kitchen Presents The Flavors That Fuel America, A Pop Up Dinner Event" ';
+		if ($post_slug == "tapas") {
+			echo ' content="My Blue Kitchen Presents A Unique Spanish Tradition, A Pop Up Dinner Event" ';
 		} else {
 			echo ' content="My Blue Kitchen, Where Confidence Reluctance and Sass Come To A Boil" ';
 		};
@@ -170,6 +170,7 @@
 
 <body>
 
+	<div id="progress"></div>
 	<header class="header">
 		<button class="header-backbutton">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 634.975 634.975" class="header-arrow"><path d="M283.123 159.09V25.424c.77-6.686-1.065-13.598-6.232-18.743-8.97-8.9-23.52-8.9-32.5 0L18.03 254.89c-4.782 4.758-6.822 11.06-6.504 17.29-.317 6.233 1.722 12.534 6.504 17.293l225.137 246.85c4.17 5.052 10.22 8.476 17.27 8.476 6.414 0 12.147-2.7 16.272-6.98.06-.05.13-.07.2-.14 5.16-5.12 7-12.06 6.23-18.74 0 0 .38-125.67.38-133.4 149.577 0 284.854 107.69 311.71 249.43 18.085-41.568 28.24-87.348 28.24-135.57 0-187.95-152.388-340.318-340.358-340.318zm23.07 181.127c-14.844 0-68.442.385-68.442.385v121.883L64.2 272.18 237.75 81.878v122.586s56.637-.59 68.444-.227c160.048 4.963 271.188 187.22 271.914 272.48-48.907-62.777-177.408-136.5-271.914-136.5z"/></svg>

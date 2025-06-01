@@ -64,6 +64,43 @@
   }
 }
 
+.tapas {
+  &-line {
+    border: 1px solid setcolor(blue, base);
+  }
+  &-header {
+    font-size: ms(3);
+    font-weight: 700;
+    width: 100%;
+    padding: 8px 0px 8px 0px;
+    margin-bottom: 0px !important; 
+    &-price {
+      float: right;
+      padding: 6px 0px 6px 0px;
+      font-weight: normal;
+      font-size: ms(0);
+      color: setcolor(black, light45);
+    }
+  }
+  &-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    column-gap: 16px;
+    margin: 32px 0px 32px 0px;
+    &-dish {
+      text-align: center;
+      padding: 8px 0px 8px 0px;
+    }
+    &-dish:nth-child(odd) {
+      grid-column: 1 / 2;
+    }
+    &-dish:nth-child(even) {
+      grid-column: 2 / 3;
+    }
+  }
+}
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
