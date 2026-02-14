@@ -50,5 +50,6 @@ a {
     transform-origin: 0 50%;
     animation: grow-progress auto linear;
     animation-timeline: --page-scroll;
+    z-index: 350;
   }
 }
